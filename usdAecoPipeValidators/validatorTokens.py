@@ -1,0 +1,13 @@
+"""Canonical plugin tokens; legacy Python errors retain their original spelling."""
+KEYWORD = "UsdAecoPipeValidators"
+PIPEKINDMISMATCH_CHECKER = "usdAecoPipeValidators:PipeKindMismatchChecker"
+PIPEKINDMISMATCH = "PipeKindMismatch"
+PIPEMISSINGAXIS_CHECKER = "usdAecoPipeValidators:PipeMissingAxisChecker"
+PIPEMISSINGAXIS = "PipeMissingAxis"
+PIPESIZENOTINTABLE_CHECKER = "usdAecoPipeValidators:PipeSizeNotInTableChecker"
+PIPESIZENOTINTABLE = "PipeSizeNotInTable"
+PIPEPORTSIZEMISMATCH_CHECKER = "usdAecoPipeValidators:PipePortSizeMismatchChecker"
+PIPEPORTSIZEMISMATCH = "PipePortSizeMismatch"
+PIPEGAP_CHECKER = "usdAecoPipeValidators:PipeGapChecker"
+PIPEGAP = "PipeGap"
+ERROR_NAMES = (PIPEKINDMISMATCH, PIPEMISSINGAXIS, PIPESIZENOTINTABLE, PIPEPORTSIZEMISMATCH, PIPEGAP)

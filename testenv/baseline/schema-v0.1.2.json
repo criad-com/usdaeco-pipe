@@ -1,0 +1,169 @@
+{
+  "AecoPipeAPI": {
+    "aeco:pipe:innerDiameter": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": true,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipe:nominalDiameter": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.05",
+      "derived": false,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipe:outerDiameter": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": true,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipe:sizeLabel": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "",
+      "derived": true,
+      "type": "string",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipe:slope": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": true,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    }
+  },
+  "AecoPipeFittingAPI": {
+    "aeco:pipeFitting:angle": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": true,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeFitting:bendRadius": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": true,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeFitting:origin": {
+      "allowedTokens": [
+        "authored",
+        "generated"
+      ],
+      "custom": false,
+      "default": "authored",
+      "derived": false,
+      "type": "token",
+      "variability": "Sdf.VariabilityUniform"
+    }
+  },
+  "AecoPipePortAPI": {
+    "aeco:pipePort:connectionType": {
+      "allowedTokens": [
+        "undefined",
+        "threaded",
+        "flanged",
+        "welded",
+        "pushFit",
+        "compression",
+        "solvent",
+        "grooved",
+        "other"
+      ],
+      "custom": false,
+      "default": "undefined",
+      "derived": false,
+      "type": "token",
+      "variability": "Sdf.VariabilityUniform"
+    },
+    "aeco:pipePort:nominalDiameter": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": false,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    }
+  },
+  "AecoPipeSystemAPI": {
+    "aeco:pipeSystem:fluid": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "",
+      "derived": false,
+      "type": "string",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeSystem:fluidTemperature": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": false,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    }
+  },
+  "AecoPipeTypeAPI": {
+    "aeco:pipeType:innerDiameters": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "[]",
+      "derived": true,
+      "type": "double[]",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeType:material": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "",
+      "derived": false,
+      "type": "string",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeType:nominalDiameters": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "[]",
+      "derived": true,
+      "type": "double[]",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeType:outerDiameters": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "[]",
+      "derived": true,
+      "type": "double[]",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeType:schedule": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "",
+      "derived": false,
+      "type": "string",
+      "variability": "Sdf.VariabilityVarying"
+    },
+    "aeco:pipeType:workingPressure": {
+      "allowedTokens": [],
+      "custom": false,
+      "default": "0.0",
+      "derived": false,
+      "type": "double",
+      "variability": "Sdf.VariabilityVarying"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Plugins": [
+    {
+      "Type": "python",
+      "Name": "usdAecoPipeValidators",
+      "Root": ".",
+      "Info": {
+        "Validators": {
+          "keywords": [
+            "UsdAecoPipeValidators"
+          ],
+          "PipeKindMismatchChecker": {
+            "doc": "Pipe classification must identify an IFC pipe or fitting.",
+            "schemaTypes": [
+              "UsdAecoPipePipeAPI",
+              "UsdAecoPipePipeFittingAPI"
+            ]
+          },
+          "PipeMissingAxisChecker": {
+            "doc": "Pipe occurrences require axis drivers.",
+            "schemaTypes": [
+              "UsdAecoPipePipeAPI"
+            ]
+          },
+          "PipeSizeNotInTableChecker": {
+            "doc": "Nominal sizes must occur in a valid aligned catalog table.",
+            "schemaTypes": [
+              "UsdAecoPipePipeAPI"
+            ]
+          },
+          "PipePortSizeMismatchChecker": {
+            "doc": "Directly connected pipe ports must agree in nominal size."
+          },
+          "PipeGapChecker": {
+            "doc": "Connected ports must coincide within 0.0001 metre."
+          }
+        }
+      }
+    }
+  ]
+}

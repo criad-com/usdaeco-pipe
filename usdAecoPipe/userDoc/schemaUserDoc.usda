@@ -1,0 +1,29 @@
+#usda 1.0
+(
+    subLayers = [@../schema.usda@]
+)
+over "AecoPipeAPI" (
+    customData = {
+        string userDocBrief = "Nominal-size driver and derived pipe dimensions beside a shared axis."
+    }
+) {}
+over "AecoPipeTypeAPI" (
+    customData = {
+        string userDocBrief = "Untyped inherited section catalog, material, pressure and size rows."
+    }
+) {}
+over "AecoPipeFittingAPI" (
+    customData = {
+        string userDocBrief = "Fitting provenance and readback dimensions on an identified element."
+    }
+) {}
+over "AecoPipePortAPI" (
+    customData = {
+        string userDocBrief = "Pipe size and connection method on a core port."
+    }
+) {}
+over "AecoPipeSystemAPI" (
+    customData = {
+        string userDocBrief = "Fluid and temperature on a core system."
+    }
+) {}

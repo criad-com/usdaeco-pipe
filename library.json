@@ -1,0 +1,11 @@
+{
+  "name": "usdAecoPipe",
+  "version": "0.2.4",
+  "kind": "usecase",
+  "tier": "kind",
+  "requires": {
+    "usdAeco": ">=0.9,<1.0",
+    "usdAecoAxis": ">=0.1.1,<0.2"
+  },
+  "license": "MIT"
+}

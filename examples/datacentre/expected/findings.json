@@ -1,0 +1,59 @@
+[
+  {
+    "elements": 2980,
+    "levels": 2,
+    "name": "PublishedCounts",
+    "ports": 6244,
+    "spaces": 35
+  },
+  {
+    "fittings": 238,
+    "name": "PipePromotion",
+    "segments": 482
+  },
+  {
+    "axis": true,
+    "catalog": true,
+    "id": "pipe.clash.hard",
+    "name": "DN50Promotion",
+    "nominal_m": 0.05,
+    "outer_m": 0.0603,
+    "ports": 2
+  },
+  {
+    "axis": true,
+    "catalog": true,
+    "id": "pipe.clash.near",
+    "name": "DN50Promotion",
+    "nominal_m": 0.05,
+    "outer_m": 0.0603,
+    "ports": 2
+  },
+  {
+    "axis": true,
+    "catalog": true,
+    "id": "pipe.clash.tangent",
+    "name": "DN50Promotion",
+    "nominal_m": 0.05,
+    "outer_m": 0.0603,
+    "ports": 2
+  },
+  {
+    "axis": true,
+    "catalog": true,
+    "id": "pipe.chw.void.f",
+    "name": "DN50Promotion",
+    "nominal_m": 0.05,
+    "outer_m": 0.0603,
+    "ports": 2
+  },
+  {
+    "axis": true,
+    "catalog": true,
+    "id": "pipe.chw.void.r",
+    "name": "DN50Promotion",
+    "nominal_m": 0.05,
+    "outer_m": 0.0603,
+    "ports": 2
+  }
+]

@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:axis:layer" = "derived"
+        string "aeco:axis:producer" = "aeco-axis 0.1.2"
+    }
+    subLayers = [
+        @axis/part-000.usda@,
+        @axis/part-001.usda@,
+        @axis/part-002.usda@,
+        @axis/part-003.usda@
+    ]
+)
+

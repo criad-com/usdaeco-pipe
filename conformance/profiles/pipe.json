@@ -1,0 +1,15 @@
+{
+  "name": "pipe",
+  "description": "Default severities for the shipped pipe validators.",
+  "include_builtin": true,
+  "severity_overrides": {
+    "pipeKindMismatch": "warn",
+    "pipeMissingAxis": "error",
+    "pipeSizeNotInTable": "warn",
+    "pipePortSizeMismatch": "warn",
+    "pipeGap": "error"
+  },
+  "keywords": [
+    "UsdAecoPipeValidators"
+  ]
+}

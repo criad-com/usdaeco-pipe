@@ -1,0 +1,38 @@
+{
+  "repos": {
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.2"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.2"
+    },
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.8"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.5"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.0"
+    }
+  },
+  "fixtures": {
+    "schema-v0.1.2": {
+      "repo": "usdaeco-pipe",
+      "library": "usdAecoPipe",
+      "ref": "v0.1.2",
+      "path": "testenv/baseline/schema-v0.1.2.json",
+      "reason": "Released property-contract snapshot used by the schema compatibility regression."
+    }
+  }
+}

@@ -1,0 +1,3 @@
+#!/usr/bin/env python3
+from usdaeco_pipe.cli import main
+raise SystemExit(main())

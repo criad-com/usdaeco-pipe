@@ -1,0 +1,469 @@
+#usda 1.0
+(
+    defaultPrim = "PipeRun"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSystem = ["Scope"]
+    }
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "PipeRun"
+{
+    def AecoFacility "Facility" (
+        prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcBuilding"
+        string aeco:id = "7f029985-3fc7-52c8-8004-e00d8f99c4d4"
+
+        def AecoLevel "Level" (
+            prepend apiSchemas = ["AecoClassificationAPI:ifc"]
+        )
+        {
+            string aeco:class:ifc:code = "IfcBuildingStorey"
+            double aeco:elevation = 0
+            string aeco:id = "4f882df4-cc6d-57bb-8086-0471d0868b12"
+
+            def Xform "Inlet" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/SteelPipe>
+            )
+            {
+                double3 aeco:axis:end = (2, 0, 0)
+                double aeco:axis:length = 2
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+                string aeco:id = "4011e556-5fda-50fa-83b7-5297aacf241b"
+                double aeco:pipe:innerDiameter = 0.0543
+                double aeco:pipe:nominalDiameter = 0.05
+                double aeco:pipe:outerDiameter = 0.0603
+                string aeco:pipe:sizeLabel = "DN50"
+                double aeco:pipe:slope = 0
+                double3 xformOp:translate = (0, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "909a1610-6983-5892-a526-50d76c364845"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Elbow/In>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "683ca170-f2c0-513c-8275-d812df71299c"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (2, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "4011e556-5fda-50fa-83b7-5297aacf241b"
+                    string aeco:derived:stamp = "aeco-axis 0.1.1"
+                    double aeco:derived:tolerance = 1e-9
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.03, -0.03, -0.03), (2.03, 0.03, 0.03)]
+                    point3f[] points = [(0, 0, 0), (2, 0, 0)]
+                    color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.06] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Middle" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/SteelPipe>
+            )
+            {
+                double3 aeco:axis:end = (0, 1.8, 0)
+                double aeco:axis:length = 1.8
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+                string aeco:id = "3891fd82-d05f-5d52-b12d-476043dc9ed9"
+                double aeco:pipe:innerDiameter = 0.0543
+                double aeco:pipe:nominalDiameter = 0.05
+                double aeco:pipe:outerDiameter = 0.0603
+                string aeco:pipe:sizeLabel = "DN50"
+                double aeco:pipe:slope = 0
+                double3 xformOp:translate = (2.2, 0.2, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Elbow/Out>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "987d4179-ed5d-5c5f-b769-9ef8db17afba"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Tee/In>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "b3e0fb43-4561-55ff-8f17-4a259903df2d"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 1.8, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "3891fd82-d05f-5d52-b12d-476043dc9ed9"
+                    string aeco:derived:stamp = "aeco-axis 0.1.1"
+                    double aeco:derived:tolerance = 4.768371586472142e-8
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 1.83, 0.03)]
+                    point3f[] points = [(0, 0, 0), (0, 1.8, 0)]
+                    color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.06] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Outlet" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/SteelPipe>
+            )
+            {
+                double3 aeco:axis:end = (0, 1.6, 0)
+                double aeco:axis:length = 1.6
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+                string aeco:id = "66a4c7b6-6728-58ce-b0c3-af854627db56"
+                double aeco:pipe:innerDiameter = 0.0543
+                double aeco:pipe:nominalDiameter = 0.05
+                double aeco:pipe:outerDiameter = 0.0603
+                string aeco:pipe:sizeLabel = "DN50"
+                double aeco:pipe:slope = 0
+                double3 xformOp:translate = (2.2, 2.4, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Tee/Out>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "e88fa1ee-b683-51bc-9b58-81b99d66cbef"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "250ebb18-a373-5850-854f-0fdb3be7fe75"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 1.6, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "66a4c7b6-6728-58ce-b0c3-af854627db56"
+                    string aeco:derived:stamp = "aeco-axis 0.1.1"
+                    double aeco:derived:tolerance = 2.3841857821338408e-8
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 1.63, 0.03)]
+                    point3f[] points = [(0, 0, 0), (0, 1.6, 0)]
+                    color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.06] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Branch" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeAPI", "AecoAxisAPI"]
+                prepend inherits = </_TypeCatalog/SteelPipe>
+            )
+            {
+                double3 aeco:axis:end = (1.6, 0, 0)
+                double aeco:axis:length = 1.6
+                double3 aeco:axis:start = (0, 0, 0)
+                string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+                string aeco:id = "62afb3ff-26ad-5f00-8a10-4159447051e0"
+                double aeco:pipe:innerDiameter = 0.0543
+                double aeco:pipe:nominalDiameter = 0.05
+                double aeco:pipe:outerDiameter = 0.0603
+                string aeco:pipe:sizeLabel = "DN50"
+                double aeco:pipe:slope = 0
+                double3 xformOp:translate = (2.4, 2.2, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Tee/Branch>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "3a1553d3-0eaa-5f9e-a886-87e92b0d2b54"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "fbfe516a-ad35-58dc-ac20-3aa226c9bb88"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (1.6, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "62afb3ff-26ad-5f00-8a10-4159447051e0"
+                    string aeco:derived:stamp = "aeco-axis 0.1.1"
+                    double aeco:derived:tolerance = 2.3841857821338408e-8
+                    int[] curveVertexCounts = [2]
+                    float3[] extent = [(-0.03, -0.03, -0.03), (1.63, 0.03, 0.03)]
+                    point3f[] points = [(0, 0, 0), (1.6, 0, 0)]
+                    color3f[] primvars:displayColor = [(0.12, 0.58, 0.88)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.06] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Elbow" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeFittingAPI"]
+            )
+            {
+                string aeco:class:ifc:code = "IfcPipeFitting.BEND"
+                string aeco:id = "b1c755d5-1c97-5921-8240-41871c568494"
+                double aeco:pipeFitting:angle = 1.5707963267948966
+                double aeco:pipeFitting:bendRadius = 0.2
+                uniform token aeco:pipeFitting:origin = "generated"
+                double3 xformOp:translate = (2, 0, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Inlet/Out>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "31d2264c-71ea-5986-9c2b-2936c4b85696"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Middle/In>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "7324ba56-9abf-517e-9364-fc8bd10a74d9"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0.2, 0.2, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "arcSegmented"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "b1c755d5-1c97-5921-8240-41871c568494"
+                    string aeco:derived:stamp = "pipe example 0.1.0"
+                    int[] curveVertexCounts = [9]
+                    point3f[] points = [(0, 0, 0), (0.039018065, 0.0038429438, 0), (0.076536685, 0.015224094, 0), (0.11111405, 0.033706076, 0), (0.14142136, 0.058578644, 0), (0.16629392, 0.088885956, 0), (0.1847759, 0.12346331, 0), (0.19615705, 0.16098194, 0), (0.2, 0.2, 0)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.008] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+
+            def Xform "Tee" (
+                prepend apiSchemas = ["AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeFittingAPI"]
+            )
+            {
+                string aeco:class:ifc:code = "IfcPipeFitting.JUNCTION"
+                string aeco:id = "bc8e2930-5bc3-5111-9032-2d60637af04f"
+                uniform token aeco:pipeFitting:origin = "authored"
+                double3 xformOp:translate = (2.2, 2.2, 1)
+                uniform token[] xformOpOrder = ["xformOp:translate"]
+
+                def AecoPort "In" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Middle/Out>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "f70685c9-5d6d-57f5-9eb0-edb1649c5a91"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, -0.2, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Out" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Outlet/In>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "eef24f9d-6ae6-53f0-a3e5-cd770df5b570"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0, 0.2, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def AecoPort "Branch" (
+                    prepend apiSchemas = ["AecoPipePortAPI"]
+                )
+                {
+                    rel aeco:connectedPorts = </PipeRun/Facility/Level/Branch/In>
+                    uniform token aeco:flowDirection = "bidirectional"
+                    string aeco:id = "992ee605-fcd0-54f7-b3ed-466d09344777"
+                    uniform token aeco:medium = "pipe"
+                    uniform token aeco:pipePort:connectionType = "welded"
+                    double aeco:pipePort:nominalDiameter = 0.05
+                    double3 xformOp:translate = (0.2, 0, 0)
+                    uniform token[] xformOpOrder = ["xformOp:translate"]
+                }
+
+                def BasisCurves "Axis" (
+                    prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                )
+                {
+                    uniform token aeco:derived:approx = "exact"
+                    uniform token aeco:derived:role = "axis"
+                    string aeco:derived:source = "bc8e2930-5bc3-5111-9032-2d60637af04f"
+                    string aeco:derived:stamp = "pipe example 0.1.0"
+                    double aeco:derived:tolerance = 1e-8
+                    int[] curveVertexCounts = [2, 2]
+                    point3f[] points = [(0, -0.2, 0), (0, 0.2, 0), (0, 0, 0), (0.2, 0, 0)]
+                    uniform token purpose = "guide"
+                    uniform token type = "linear"
+                    float[] widths = [0.008] (
+                        interpolation = "constant"
+                    )
+                    uniform token wrap = "nonperiodic"
+                }
+            }
+        }
+    }
+
+    def AecoSystem "Water" (
+        prepend apiSchemas = ["AecoClassificationAPI:ifc", "AecoPipeSystemAPI"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcDistributionSystem.DOMESTICCOLDWATER"
+        string aeco:id = "f045183b-7c47-5aa5-acb6-466b1a126dee"
+        string aeco:pipeSystem:fluid = "Water"
+        double aeco:pipeSystem:fluidTemperature = 288.15
+        rel aeco:serves = </PipeRun/Facility/Level>
+        rel collection:members:includes = [
+            </PipeRun/Facility/Level/Inlet>,
+            </PipeRun/Facility/Level/Middle>,
+            </PipeRun/Facility/Level/Outlet>,
+            </PipeRun/Facility/Level/Branch>,
+            </PipeRun/Facility/Level/Elbow>,
+            </PipeRun/Facility/Level/Tee>,
+        ]
+    }
+}
+
+class "_TypeCatalog"
+{
+    class "SteelPipe" (
+        prepend apiSchemas = ["AecoTypeAPI", "AecoPipeTypeAPI", "AecoClassificationAPI:ifc"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcPipeSegmentType.RIGIDSEGMENT"
+        double[] aeco:pipeType:innerDiameters = [0.0543, 0.0701, 0.0829]
+        string aeco:pipeType:material = "Steel"
+        double[] aeco:pipeType:nominalDiameters = [0.05, 0.065, 0.08]
+        double[] aeco:pipeType:outerDiameters = [0.0603, 0.0761, 0.0889]
+        string aeco:pipeType:schedule = "Example catalog"
+        double aeco:pipeType:workingPressure = 1000000
+        string aeco:type:model = "Steel pipe catalog"
+    }
+}
+

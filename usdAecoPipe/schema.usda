@@ -1,0 +1,132 @@
+#usda 1.0
+(
+    subLayers = [@usd/schema.usda@, @usdGeom/schema.usda@, @usdAeco/schema.usda@]
+)
+over "GLOBAL" (
+    customData = {
+        string libraryName = "usdAecoPipe"
+        string libraryPath = "."
+        bool skipCodeGeneration = true
+        bool useLiteralIdentifier = true
+    }
+) {}
+
+class "AecoPipeAPI" (
+    inherits = </APISchemaBase>
+    doc = "Pipe occurrence dimensions. Apply beside AecoElementAPI and AecoAxisAPI; kind is classification. All dimensional values are SI."
+    customData = {
+        string className = "PipeAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["Imageable"]
+    }
+) {
+    double aeco:pipe:nominalDiameter = 0.05 (
+        doc = "DRIVER (m). Key in the catalog size table. Mirrors RBS_PIPE_DIAMETER_PARAM / MEPCurve.Diameter and Pset_PipeSegmentTypeCommon.NominalDiameter. Nominal size is not necessarily outer diameter."
+    )
+    double aeco:pipe:outerDiameter = 0 (
+        aecoDerived = true
+        doc = "DERIVED (m). Resolved outer diameter from the type table; RBS_PIPE_OUTER_DIAMETER or twice IfcCircleHollowProfileDef.Radius. Zero means unavailable."
+    )
+    double aeco:pipe:innerDiameter = 0 (
+        aecoDerived = true
+        doc = "DERIVED (m). Resolved bore; RBS_PIPE_INNER_DIAM_PARAM or twice (IfcCircleHollowProfileDef.Radius minus WallThickness). Zero means unavailable."
+    )
+    string aeco:pipe:sizeLabel = "" (
+        aecoDerived = true
+        doc = "DERIVED display text, no unit conversion. Mirrors RBS_PIPE_SIZE_PARAM or IfcProfileDef.ProfileName, for example DN50. Empty means unavailable."
+    )
+    double aeco:pipe:slope = 0 (
+        aecoDerived = true
+        doc = "DERIVED dimensionless signed rise/run. Mirrors RBS_PIPE_SLOPE or Pset_PipeSegmentOccurrence.Gradient; otherwise derived from the world axis. A vertical axis has no finite slope."
+    )
+}
+
+class "AecoPipeTypeAPI" (
+    inherits = </APISchemaBase>
+    doc = "Apply beside AecoTypeAPI on a catalog class prim. Occurrences inherit the type; aligned size arrays contain one row per known profile. Applicability is unrestricted because catalog classes deliberately have no typeName."
+    customData = {
+        string className = "PipeTypeAPI"
+        token apiSchemaType = "singleApply"
+        string aecoApplicability = "unrestricted"
+    }
+) {
+    string aeco:pipeType:material = "" (
+        doc = "DRIVER material name, not a render binding. Mirrors PipeSegment material or IfcMaterial.Name on the material profile. Empty means unspecified."
+    )
+    string aeco:pipeType:schedule = "" (
+        doc = "DRIVER schedule/reference text. Mirrors PipeSegment schedule/type or Pset_PipeSegmentTypeCommon.Reference. Empty means unspecified."
+    )
+    double aeco:pipeType:workingPressure = 0 (
+        doc = "DRIVER (Pa). Mirrors the type working-pressure parameter or Pset_PipeSegmentTypeCommon.WorkingPressure. Zero means unspecified."
+    )
+    double[] aeco:pipeType:nominalDiameters = [] (
+        aecoDerived = true
+        doc = "DERIVED (m). Unique nominal size keys, aligned with outerDiameters and innerDiameters; PipeSegment.GetSizes() or known IFC profiles. Empty means no catalog data."
+    )
+    double[] aeco:pipeType:outerDiameters = [] (
+        aecoDerived = true
+        doc = "DERIVED (m). Outer diameter per nominalDiameters row; PipeSegment.GetSizes() or twice the IFC profile Radius."
+    )
+    double[] aeco:pipeType:innerDiameters = [] (
+        aecoDerived = true
+        doc = "DERIVED (m). Bore per nominalDiameters row; PipeSegment.GetSizes() or twice the IFC profile (Radius minus WallThickness)."
+    )
+}
+
+class "AecoPipeFittingAPI" (
+    inherits = </APISchemaBase>
+    doc = "Pipe fitting provenance and resolved dimensions. Bend, tee and transition roles remain IFC classification codes."
+    customData = {
+        string className = "PipeFittingAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["Imageable"]
+    }
+) {
+    uniform token aeco:pipeFitting:origin = "authored" (
+        allowedTokens = ["authored", "generated"]
+        doc = "DRIVER provenance. Authored for an existing imported fitting; generated when an adapter creates it to satisfy intent. Adapter bookkeeping, not an IFC kind."
+    )
+    double aeco:pipeFitting:angle = 0 (
+        aecoDerived = true
+        doc = "DERIVED (rad). Bend deflection from family parameters or fitting geometry (IfcRevolvedAreaSolid.Angle). Zero means unspecified or straight."
+    )
+    double aeco:pipeFitting:bendRadius = 0 (
+        aecoDerived = true
+        doc = "DERIVED (m). Centreline bend radius from family parameters or fitting geometry. Zero means unavailable or inapplicable."
+    )
+}
+
+class "AecoPipePortAPI" (
+    inherits = </APISchemaBase>
+    doc = "Pipe connector refinement of AecoPort. Connectivity remains aeco:connectedPorts."
+    customData = {
+        string className = "PipePortAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["AecoPort"]
+    }
+) {
+    double aeco:pipePort:nominalDiameter = 0 (
+        doc = "SI (m). Mirrors twice Connector.Radius or Pset_DistributionPortTypePipe.NominalDiameter. Equipment connector DRIVER; segment/fitting connector readback is host-owned. Not globally flagged derived because equipment can drive it. Zero means unknown."
+    )
+    uniform token aeco:pipePort:connectionType = "undefined" (
+        allowedTokens = ["undefined", "threaded", "flanged", "welded", "pushFit", "compression", "solvent", "grooved", "other"]
+        doc = "DRIVER connection method. Mirrors family connector description or Pset_DistributionPortTypePipe.ConnectionType. Undefined means unspecified; other preserves an unrecognized method without inventing a token."
+    )
+}
+
+class "AecoPipeSystemAPI" (
+    inherits = </APISchemaBase>
+    doc = "Fluid data on AecoSystem. System kind is classification; members remain the core collection."
+    customData = {
+        string className = "PipeSystemAPI"
+        token apiSchemaType = "singleApply"
+        token[] apiSchemaCanOnlyApplyTo = ["AecoSystem"]
+    }
+) {
+    string aeco:pipeSystem:fluid = "" (
+        doc = "DRIVER fluid name. Mirrors PipingSystemType fluid. IFC has no standard equivalent; optional Pset_PipeSystemCommon.Fluid is an importer convention. Empty means unspecified."
+    )
+    double aeco:pipeSystem:fluidTemperature = 0 (
+        doc = "DRIVER (K). Mirrors PipingSystemType fluid temperature. IFC has no standard equivalent; optional Pset_PipeSystemCommon.FluidTemperature is an importer convention. Zero means unavailable, not a measured temperature."
+    )
+}

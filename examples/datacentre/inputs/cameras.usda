@@ -1,0 +1,15 @@
+#usda 1.0
+(
+    upAxis = "Z"
+    metersPerUnit = 1
+)
+def Scope "Renders" {
+    def Camera "l01_void" {
+        token projection = "orthographic"
+        float horizontalAperture = 125
+        float verticalAperture = 78.125
+        float2 clippingRange = (0.1, 100)
+        double3 xformOp:translate = (23, -3.1, 12)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}

@@ -1,0 +1,42 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:pipe:source" = "usdaeco-datacentre v0.4.1 clash manifest; three straight source axes"
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L01_Office"
+            {
+                over "Office_Corridor_L01"
+                {
+                    over "Corridor_ceiling_void"
+                    {
+                        over "pipe_clash_hard"
+                        {
+                            double3 aeco:axis:end = (24, -2, 6.8)
+                            double3 aeco:axis:start = (24, -4, 6.8)
+                        }
+
+                        over "pipe_clash_near"
+                        {
+                            double3 aeco:axis:end = (25, -1.5, 6.88515)
+                            double3 aeco:axis:start = (23, -1.5, 6.88515)
+                        }
+
+                        over "pipe_clash_tangent"
+                        {
+                            double3 aeco:axis:end = (25, -2.89485, 6.8)
+                            double3 aeco:axis:start = (23, -2.89485, 6.8)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

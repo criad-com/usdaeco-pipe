@@ -1,0 +1,2454 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:pipe:layer" = "derived"
+        string "aeco:pipe:producer" = "aeco-pipe 0.2.0"
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "rack_a_r4_03_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a1_sec_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_09_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_02_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a1_pri_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_04_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_yard_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_06_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_04_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_09_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_20_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_18_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_crah_b4_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_17_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_13_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_05_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_e_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_18_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_17_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_main_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_13_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_yard_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_02_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_cdu_a4_pri_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chp_2_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_03_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_07_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_05_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_cdu_a4_sec_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_16_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_man_a_r2_feed_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_04_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_06_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_18_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a1_pri_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a4_sec_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_11_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_tcs_hdr_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_18_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_15_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_main_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_13_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_13_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_14_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_03_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_14_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_19_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_ch_1_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_3_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_08_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_main_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chp_1_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_07_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_14_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_16_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_06_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_16_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_02_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "Fuel_Line_FT_A_GEN_A_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_ahu_1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_19_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_1_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a2_pri_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_09_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_ch_1_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_08_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_20_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_15_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_3_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_06_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_3_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_02_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_2_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_20_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_drc_2_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_tcs_hdr_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_10_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_cdu_a3_sec_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_01_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_n_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_04_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b3_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_08_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_08_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_w_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_11_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chp_1_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_08_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_05_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_07_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_18_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_ch_2_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_07_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_17_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_s_Seg_2"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_drc_3_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_drc_4_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_dos_1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_10_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_e_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_15_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_02_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_17_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_19_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_03_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_12_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_02_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_11_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_14_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_drc_1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_10_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b1_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_10_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_02_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_16_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_01_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_12_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_07_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_17_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_2_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_18_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "Fuel_Line_FT_A_GEN_A_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_yard_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_14_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chp_3_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_03_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fwp_2_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a3_pri_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "Fuel_Line_FT_B_GEN_B_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_09_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_hx_1_chw_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_09_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_05_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_s_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_e_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_13_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_2_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_e_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_07_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_2_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_06_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_8"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_17_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_12_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_12_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_05_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_14_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_tcs_hdr_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_20_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_cdu_a3_pri_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_12_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_07_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_05_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b5_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_crah_b5_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_n_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_05_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_07_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_04_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_19_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_man_a_r1_feed_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_04_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "Fuel_Line_FT_B_GEN_B_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_01_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_20_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b3_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_15_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_17_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fwp_2_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_06_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_09_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_09_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b6_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_s_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a2_pri_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_man_a_r2_feed_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_04_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_01_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_13_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_16_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_08_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_man_a_r3_feed_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_ahu_1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_19_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_15_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_e_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_11_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_13_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_3_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_hdr_w_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_1_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_10_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b2_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_tcs_hdr_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a2_sec_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_06_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_man_a_r4_feed_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_10_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_15_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_bt_1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_16_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_drc_4_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_03_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_r_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_11_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_12_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_w_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_02_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chp_3_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_20_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_20_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fwp_2_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_hx_1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a1_sec_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_hx_1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_drc_1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b1_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chw_hdr_e_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_hx_1_chw_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_ch_2_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_19_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_10_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b4_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_17_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_18"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_3_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_r_Seg_11"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_16_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_12_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_13_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_s_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_11"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_7"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_13"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_08_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_09_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_12_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_03_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_18_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_r_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_10_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_drc_3_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_12"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_19_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r2_r_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_1_s_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_man_a_r4_feed_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a3_sec_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_01_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_06_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_16_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fws_main_r_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_bt_1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_04_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_fwp_1_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_19_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_14_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_man_a_r1_feed_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_dos_1_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_tcs_hdr_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_1_r_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_man_a_r3_feed_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_18_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r4_11_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_20"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_15_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_05_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_tcs_hdr_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_cdu_a4_pri_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_3"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_14_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_s_Seg_9"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fwp_3_s_Leg"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r4_r_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_chw_main_r_Seg_6"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r3_s_Seg_19"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r4_15_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r4_r_Seg_17"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_drc_2_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_01_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_r_Seg_16"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_11_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r3_20_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_chp_1_r_Riser"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r2_01_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_14"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r1_08_Return_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_crah_b2_Feed_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rack_a_r1_01_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r3_s_Seg_4"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r2_11_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "rt_clg_cdu_a2_sec_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rack_a_r3_03_Supply_Hose"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_10"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r2_r_Seg_2"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_crah_b6_Riser_Stub"
+                {
+                    double aeco:pipe:slope = None
+                }
+
+                over "clg_man_a_r1_s_Seg_5"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_r_Seg_15"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "rt_clg_fws_main_r_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+
+                over "clg_man_a_r1_s_Seg_1"
+                {
+                    double aeco:pipe:slope = 0
+                }
+            }
+
+            over "L01_Office"
+            {
+                over "WC"
+                {
+                    over "pipe_drain_pod"
+                    {
+                        double aeco:pipe:outerDiameter = 0.11
+                        string aeco:pipe:sizeLabel = "DN100"
+                        double aeco:pipe:slope = None
+                    }
+                }
+
+                over "Office_Corridor_L01"
+                {
+                    over "Corridor_ceiling_void"
+                    {
+                        over "pipe_clash_hard"
+                        {
+                            double aeco:pipe:outerDiameter = 0.0603
+                            string aeco:pipe:sizeLabel = "DN50"
+                            double aeco:pipe:slope = 0
+                        }
+
+                        over "pipe_clash_near"
+                        {
+                            double aeco:pipe:outerDiameter = 0.0603
+                            string aeco:pipe:sizeLabel = "DN50"
+                            double aeco:pipe:slope = 0
+                        }
+
+                        over "pipe_chw_void_f"
+                        {
+                            double aeco:pipe:outerDiameter = 0.0603
+                            string aeco:pipe:sizeLabel = "DN50"
+                            double aeco:pipe:slope = None
+                        }
+
+                        over "pipe_chw_void_r"
+                        {
+                            double aeco:pipe:outerDiameter = 0.0603
+                            string aeco:pipe:sizeLabel = "DN50"
+                            double aeco:pipe:slope = None
+                        }
+
+                        over "pipe_clash_tangent"
+                        {
+                            double aeco:pipe:outerDiameter = 0.0603
+                            string aeco:pipe:sizeLabel = "DN50"
+                            double aeco:pipe:slope = 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

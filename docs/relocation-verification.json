@@ -1,0 +1,847 @@
+{
+  "version": "0.2.3",
+  "toolchain": "0.3.6",
+  "pytest_passed": 20,
+  "layouts": {
+    "original": {
+      "passed": 82,
+      "total": 82,
+      "checks": [
+        {
+          "name": "plugin requirements",
+          "passed": true,
+          "detail": "usdAeco 0.9.2, usdAecoAxis 0.1.2, usdAecoBuildUp 0.2.1, usdAecoPipe 0.2.3"
+        },
+        {
+          "name": "all eight core validator plugin rules loaded",
+          "passed": true,
+          "detail": "usdAecoValidators:ClassificationChecker, usdAecoValidators:DerivedExactOnMeshChecker, usdAecoValidators:DerivedGeometryChecker, usdAecoValidators:ExactWithoutToleranceChecker, usdAecoValidators:GroupChecker, usdAecoValidators:IdentityChecker, usdAecoValidators:PortConnectivityChecker, usdAecoValidators:SpatialGrammarChecker"
+        },
+        {
+          "name": "registry resolves exactly five pipe APIs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "codeless plugin declares version, kind tier and core requirement",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "PipePort refuses Mesh; PipeSystem refuses Scope; valid targets accepted",
+          "passed": true,
+          "detail": "4 cases passed"
+        },
+        {
+          "name": "Pipe and Fitting require Imageable",
+          "passed": true,
+          "detail": "4 cases passed"
+        },
+        {
+          "name": "all nine derived flags visible; drivers unflagged",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "all 18 source properties documented; no kind tokens or geometry properties",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "five validators registered idempotently by keyword",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "example passes pipe, core and built-in validators",
+          "passed": true,
+          "detail": "1 examples, 0 errors (expected 0), 0 warnings"
+        },
+        {
+          "name": "core E15 detects a missing tee generation tolerance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "queries resolve four occurrences and the inherited three-row catalog",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "example has an elbow, tee, generated provenance and symmetric ports",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "type edits broadcast and occurrence overrides win",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "seeded missing axis",
+          "passed": true,
+          "detail": "Counter({('pipeMissingAxis', 'Error'): 1})"
+        },
+        {
+          "name": "seeded nominal size 0.033 m",
+          "passed": true,
+          "detail": "Counter({('pipeSizeNotInTable', 'Warn'): 1})"
+        },
+        {
+          "name": "seeded wrong IFC kind",
+          "passed": true,
+          "detail": "Counter({('pipeKindMismatch', 'Warn'): 1})"
+        },
+        {
+          "name": "seeded 0.5 m port gap produces one error",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "direct pipe-port diameter mismatch warns once",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "fitting between different port sizes suppresses mismatch",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "malformed size arrays warn instead of silently truncating",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "missing catalog is unknown, not an invalid size",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "gap threshold uses SI metres with millimetre geometry",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "one-way connection still reports a gap once",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "profile example conformance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla probe: no plugins, fallbacks and all world transforms identical",
+          "passed": true,
+          "detail": "28 transforms; authored pipe data legible"
+        },
+        {
+          "name": "baseline CLI import matches actual IFC entities",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 2, \"AecoPipeFittingAPI\": 0, \"AecoPipePortAPI\": 4, \"AecoPipeSystemAPI\": 1, \"AecoPipeTypeAPI\": 2, \"nominalFallbacks\": 0, \"propsBlocked\": 0, \"unmatched\": 0}"
+        },
+        {
+          "name": "baseline imported stage has zero validation errors",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "baseline tables contain actual IFC profiles; axes preserved",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "import preserves input bytes and authors no geometry/transforms",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "muting kind restores core stage without moving geometry",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "augmented baseline exercises all five APIs",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 2, \"AecoPipeFittingAPI\": 1, \"AecoPipePortAPI\": 4, \"AecoPipeSystemAPI\": 1, \"AecoPipeTypeAPI\": 2, \"nominalFallbacks\": 0, \"propsBlocked\": 20, \"unmatched\": 0}"
+        },
+        {
+          "name": "promoted quarantine values blocked; unmapped properties retained",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "profile rows and pressure use SI",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "port tokens, Celsius-to-Kelvin and fitting geometry imported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "augmented import validates with zero errors",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "importer refuses overwriting an existing output",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetre IFC: nominal, outer and bore stay distinct SI values",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetre IFC: world ports remain coincident after conversion",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "published Sdf property contract unchanged",
+          "passed": true,
+          "detail": "v0.1.2: 5 APIs, 18 properties, 9 derived flags"
+        },
+        {
+          "name": "example harness",
+          "passed": true,
+          "detail": "findings and committed result match; 14153 plugin-free prims; 1 non-blank renders; source pinned; elapsed 20.749s / budget 180s"
+        },
+        {
+          "name": "published pipeline selects pinned source and all pipe refinements",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 482, \"AecoPipeFittingAPI\": 238, \"AecoPipePortAPI\": 1650, \"AecoPipeSystemAPI\": 5, \"AecoPipeTypeAPI\": 17, \"incompleteTables\": 17, \"propsBlocked\": 12, \"sectionFallbacks\": 12, \"unknownNominal\": 476}"
+        },
+        {
+          "name": "five required DN50 identities have OD 60.3 mm and inherited catalogs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "unavailable nominal values stay blocked; catalogs remain incomplete",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "imported drivers and schema-marked readback occupy separate layers",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "axis derivation writes 1794 guide representations",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "final render includes guides and excludes every extent",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "published USD layer hashes still match the release manifest",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "plugin-free data-centre composition preserves every source transform",
+          "passed": true,
+          "detail": "12279 transforms"
+        },
+        {
+          "name": "S01",
+          "passed": true,
+          "detail": "MIT (inferred)"
+        },
+        {
+          "name": "S02",
+          "passed": true,
+          "detail": "readme"
+        },
+        {
+          "name": "S03",
+          "passed": true,
+          "detail": "metadata"
+        },
+        {
+          "name": "S04",
+          "passed": true,
+          "detail": "dependency pins"
+        },
+        {
+          "name": "S05",
+          "passed": true,
+          "detail": "flake"
+        },
+        {
+          "name": "S06",
+          "passed": true,
+          "detail": "layout"
+        },
+        {
+          "name": "S07",
+          "passed": true,
+          "detail": "global metadata"
+        },
+        {
+          "name": "S08",
+          "passed": true,
+          "detail": "classes"
+        },
+        {
+          "name": "S09",
+          "passed": true,
+          "detail": "namespaces"
+        },
+        {
+          "name": "S10",
+          "passed": true,
+          "detail": "applicability"
+        },
+        {
+          "name": "S11",
+          "passed": true,
+          "detail": "usdGenSchema --validate clean; compiler compatibility only"
+        },
+        {
+          "name": "S12",
+          "passed": true,
+          "detail": "resource plugin"
+        },
+        {
+          "name": "S13",
+          "passed": true,
+          "detail": "user docs"
+        },
+        {
+          "name": "S14",
+          "passed": true,
+          "detail": "validator descriptor"
+        },
+        {
+          "name": "S15",
+          "passed": true,
+          "detail": "validator tokens"
+        },
+        {
+          "name": "S16",
+          "passed": true,
+          "detail": "5 validators discovered and loaded"
+        },
+        {
+          "name": "S17",
+          "passed": true,
+          "detail": "tests"
+        },
+        {
+          "name": "S18",
+          "passed": true,
+          "detail": "companion"
+        },
+        {
+          "name": "S19",
+          "passed": true,
+          "detail": "profile"
+        },
+        {
+          "name": "S20",
+          "passed": true,
+          "detail": "usecase"
+        },
+        {
+          "name": "S21",
+          "passed": true,
+          "detail": "example files"
+        },
+        {
+          "name": "S22",
+          "passed": true,
+          "detail": "example manifest"
+        },
+        {
+          "name": "S23",
+          "passed": true,
+          "detail": "render caps"
+        },
+        {
+          "name": "S24",
+          "passed": true,
+          "detail": "1 stage roots compose without family plugins"
+        },
+        {
+          "name": "S25",
+          "passed": true,
+          "detail": "terms"
+        },
+        {
+          "name": "S26",
+          "passed": true,
+          "detail": "check contract"
+        },
+        {
+          "name": "S27",
+          "passed": true,
+          "detail": "14153 prims, 0 composition errors in relocated plugin-free result"
+        },
+        {
+          "name": "S28",
+          "passed": true,
+          "detail": "stock Embree render: 1280x800, 168537 bytes, non-uniform"
+        },
+        {
+          "name": "S29",
+          "passed": true,
+          "detail": "9 asset paths use example inputs/, archived layers or documented resolver tokens"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "9 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "14 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "5 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "term sweep",
+          "passed": true,
+          "detail": "86 text files, no matches"
+        }
+      ],
+      "importer": "passed"
+    },
+    "relocated": {
+      "passed": 82,
+      "total": 82,
+      "checks": [
+        {
+          "name": "plugin requirements",
+          "passed": true,
+          "detail": "usdAeco 0.9.2, usdAecoAxis 0.1.2, usdAecoBuildUp 0.2.1, usdAecoPipe 0.2.3"
+        },
+        {
+          "name": "all eight core validator plugin rules loaded",
+          "passed": true,
+          "detail": "usdAecoValidators:ClassificationChecker, usdAecoValidators:DerivedExactOnMeshChecker, usdAecoValidators:DerivedGeometryChecker, usdAecoValidators:ExactWithoutToleranceChecker, usdAecoValidators:GroupChecker, usdAecoValidators:IdentityChecker, usdAecoValidators:PortConnectivityChecker, usdAecoValidators:SpatialGrammarChecker"
+        },
+        {
+          "name": "registry resolves exactly five pipe APIs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "codeless plugin declares version, kind tier and core requirement",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "PipePort refuses Mesh; PipeSystem refuses Scope; valid targets accepted",
+          "passed": true,
+          "detail": "4 cases passed"
+        },
+        {
+          "name": "Pipe and Fitting require Imageable",
+          "passed": true,
+          "detail": "4 cases passed"
+        },
+        {
+          "name": "all nine derived flags visible; drivers unflagged",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "all 18 source properties documented; no kind tokens or geometry properties",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "five validators registered idempotently by keyword",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "example passes pipe, core and built-in validators",
+          "passed": true,
+          "detail": "1 examples, 0 errors (expected 0), 0 warnings"
+        },
+        {
+          "name": "core E15 detects a missing tee generation tolerance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "queries resolve four occurrences and the inherited three-row catalog",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "example has an elbow, tee, generated provenance and symmetric ports",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "type edits broadcast and occurrence overrides win",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "seeded missing axis",
+          "passed": true,
+          "detail": "Counter({('pipeMissingAxis', 'Error'): 1})"
+        },
+        {
+          "name": "seeded nominal size 0.033 m",
+          "passed": true,
+          "detail": "Counter({('pipeSizeNotInTable', 'Warn'): 1})"
+        },
+        {
+          "name": "seeded wrong IFC kind",
+          "passed": true,
+          "detail": "Counter({('pipeKindMismatch', 'Warn'): 1})"
+        },
+        {
+          "name": "seeded 0.5 m port gap produces one error",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "direct pipe-port diameter mismatch warns once",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "fitting between different port sizes suppresses mismatch",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "malformed size arrays warn instead of silently truncating",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "missing catalog is unknown, not an invalid size",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "gap threshold uses SI metres with millimetre geometry",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "one-way connection still reports a gap once",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "profile example conformance",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "vanilla probe: no plugins, fallbacks and all world transforms identical",
+          "passed": true,
+          "detail": "28 transforms; authored pipe data legible"
+        },
+        {
+          "name": "baseline CLI import matches actual IFC entities",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 2, \"AecoPipeFittingAPI\": 0, \"AecoPipePortAPI\": 4, \"AecoPipeSystemAPI\": 1, \"AecoPipeTypeAPI\": 2, \"nominalFallbacks\": 0, \"propsBlocked\": 0, \"unmatched\": 0}"
+        },
+        {
+          "name": "baseline imported stage has zero validation errors",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "baseline tables contain actual IFC profiles; axes preserved",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "import preserves input bytes and authors no geometry/transforms",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "muting kind restores core stage without moving geometry",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "augmented baseline exercises all five APIs",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 2, \"AecoPipeFittingAPI\": 1, \"AecoPipePortAPI\": 4, \"AecoPipeSystemAPI\": 1, \"AecoPipeTypeAPI\": 2, \"nominalFallbacks\": 0, \"propsBlocked\": 20, \"unmatched\": 0}"
+        },
+        {
+          "name": "promoted quarantine values blocked; unmapped properties retained",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "profile rows and pressure use SI",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "port tokens, Celsius-to-Kelvin and fitting geometry imported",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "augmented import validates with zero errors",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "importer refuses overwriting an existing output",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetre IFC: nominal, outer and bore stay distinct SI values",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "millimetre IFC: world ports remain coincident after conversion",
+          "passed": true,
+          "detail": "0 errors, 0 warnings"
+        },
+        {
+          "name": "published Sdf property contract unchanged",
+          "passed": true,
+          "detail": "v0.1.2: 5 APIs, 18 properties, 9 derived flags"
+        },
+        {
+          "name": "example harness",
+          "passed": true,
+          "detail": "findings and committed result match; 14153 plugin-free prims; 1 non-blank renders; source pinned; elapsed 20.603s / budget 180s"
+        },
+        {
+          "name": "published pipeline selects pinned source and all pipe refinements",
+          "passed": true,
+          "detail": "{\"AecoPipeAPI\": 482, \"AecoPipeFittingAPI\": 238, \"AecoPipePortAPI\": 1650, \"AecoPipeSystemAPI\": 5, \"AecoPipeTypeAPI\": 17, \"incompleteTables\": 17, \"propsBlocked\": 12, \"sectionFallbacks\": 12, \"unknownNominal\": 476}"
+        },
+        {
+          "name": "five required DN50 identities have OD 60.3 mm and inherited catalogs",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "unavailable nominal values stay blocked; catalogs remain incomplete",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "imported drivers and schema-marked readback occupy separate layers",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "axis derivation writes 1794 guide representations",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "final render includes guides and excludes every extent",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "published USD layer hashes still match the release manifest",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "plugin-free data-centre composition preserves every source transform",
+          "passed": true,
+          "detail": "12279 transforms"
+        },
+        {
+          "name": "S01",
+          "passed": true,
+          "detail": "MIT (inferred)"
+        },
+        {
+          "name": "S02",
+          "passed": true,
+          "detail": "readme"
+        },
+        {
+          "name": "S03",
+          "passed": true,
+          "detail": "metadata"
+        },
+        {
+          "name": "S04",
+          "passed": true,
+          "detail": "dependency pins"
+        },
+        {
+          "name": "S05",
+          "passed": true,
+          "detail": "flake"
+        },
+        {
+          "name": "S06",
+          "passed": true,
+          "detail": "layout"
+        },
+        {
+          "name": "S07",
+          "passed": true,
+          "detail": "global metadata"
+        },
+        {
+          "name": "S08",
+          "passed": true,
+          "detail": "classes"
+        },
+        {
+          "name": "S09",
+          "passed": true,
+          "detail": "namespaces"
+        },
+        {
+          "name": "S10",
+          "passed": true,
+          "detail": "applicability"
+        },
+        {
+          "name": "S11",
+          "passed": true,
+          "detail": "usdGenSchema --validate clean; compiler compatibility only"
+        },
+        {
+          "name": "S12",
+          "passed": true,
+          "detail": "resource plugin"
+        },
+        {
+          "name": "S13",
+          "passed": true,
+          "detail": "user docs"
+        },
+        {
+          "name": "S14",
+          "passed": true,
+          "detail": "validator descriptor"
+        },
+        {
+          "name": "S15",
+          "passed": true,
+          "detail": "validator tokens"
+        },
+        {
+          "name": "S16",
+          "passed": true,
+          "detail": "5 validators discovered and loaded"
+        },
+        {
+          "name": "S17",
+          "passed": true,
+          "detail": "tests"
+        },
+        {
+          "name": "S18",
+          "passed": true,
+          "detail": "companion"
+        },
+        {
+          "name": "S19",
+          "passed": true,
+          "detail": "profile"
+        },
+        {
+          "name": "S20",
+          "passed": true,
+          "detail": "usecase"
+        },
+        {
+          "name": "S21",
+          "passed": true,
+          "detail": "example files"
+        },
+        {
+          "name": "S22",
+          "passed": true,
+          "detail": "example manifest"
+        },
+        {
+          "name": "S23",
+          "passed": true,
+          "detail": "render caps"
+        },
+        {
+          "name": "S24",
+          "passed": true,
+          "detail": "1 stage roots compose without family plugins"
+        },
+        {
+          "name": "S25",
+          "passed": true,
+          "detail": "terms"
+        },
+        {
+          "name": "S26",
+          "passed": true,
+          "detail": "check contract"
+        },
+        {
+          "name": "S27",
+          "passed": true,
+          "detail": "14153 prims, 0 composition errors in relocated plugin-free result"
+        },
+        {
+          "name": "S28",
+          "passed": true,
+          "detail": "stock Embree render: 1280x800, 168537 bytes, non-uniform"
+        },
+        {
+          "name": "S29",
+          "passed": true,
+          "detail": "9 asset paths use example inputs/, archived layers or documented resolver tokens"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "9 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "14 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "local documentation links",
+          "passed": true,
+          "detail": "5 links resolve (anchors and remote URLs skipped)"
+        },
+        {
+          "name": "term sweep",
+          "passed": true,
+          "detail": "86 text files, no matches"
+        }
+      ],
+      "importer": "passed"
+    }
+  },
+  "archived_layer_probe": {
+    "repo": "pipe",
+    "archived_entry": "source.usda",
+    "prim_count": 12356,
+    "composition_errors": 0
+  }
+}
