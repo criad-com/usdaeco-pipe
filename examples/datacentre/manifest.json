@@ -1,7 +1,7 @@
 {
   "actual_findings_sha256": "453e659b975ad8ba77e79977d7febfcbda000f6dc2a8a02d80fe3a787b478f63",
   "datacentre": {
-    "ref": "v0.4.5",
+    "ref": "v0.4.8",
     "variant": "clash"
   },
   "facility": "demo-datacentre-01",
@@ -9,28 +9,33 @@
   "pins": {
     "axis": {
       "library": "usdAecoAxis",
-      "ref": "v0.1.2",
-      "repo": "usdaeco-axis"
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
     },
     "core": {
       "library": "usdAeco",
-      "ref": "v0.9.2",
-      "repo": "usdaeco-core"
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
     },
     "datacentre": {
       "library": "usdaeco-datacentre",
-      "ref": "v0.4.5",
-      "repo": "usdaeco-datacentre"
+      "ref": "v0.4.8",
+      "repo": "usdaeco-datacentre",
+      "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb"
     },
     "ifc": {
       "library": "usdaeco-ifc",
-      "ref": "v0.2.0",
-      "repo": "usdaeco-ifc"
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
     },
     "toolchain": {
       "library": "usdaeco-toolchain",
-      "ref": "v0.3.8",
-      "repo": "usdaeco-toolchain"
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
     }
   },
   "presentation": {
@@ -58,13 +63,13 @@
       {
         "bytes": 865,
         "path": "result/README.md",
-        "sha256": "7f24238633f2f1250ef5229f330f5bc9781d2e533b2ed1df5131958d7e5ffa69"
+        "sha256": "26e4e0e52e86ad416021a5a6314137e1f761845768d0a0d6733dad6d76851511"
       },
       {
         "bytes": 1784659,
-        "normalized_sha256": "3acb53f8f4698909b66b468791e6467fa3370d3a280c3e82deafe7f7c1005b2b",
+        "normalized_sha256": "a26f0edffe2d8539937241cae828b9cf7e40e568f10fdd4b1c3c517174cd1687",
         "path": "result/example.usdc",
-        "sha256": "8b0040b6a3e10065449a3a1e7951053fe77acc035566852d4eff811aafaec9f2"
+        "sha256": "dd3a1060007ed2bfe290371edcaaff7b26faefd032bc4596f65e57b048247c72"
       },
       {
         "bytes": 1241,
@@ -79,27 +84,27 @@
       {
         "bytes": 640086,
         "path": "result/layers/out/axis/part-000.usda",
-        "sha256": "38daee429100a25dbb06de4b020f866ef70d730a8cd027a861c6164649b759ce"
+        "sha256": "3ce5317eeb7b598a6df839100e02b57cbf37ad761167cfd965945824867964e0"
       },
       {
         "bytes": 643604,
         "path": "result/layers/out/axis/part-001.usda",
-        "sha256": "0336bcc5e85ae376184215e95aaf7048697b1a2fc27022ee64d60b68d7fd7409"
+        "sha256": "7b9061454900ec185f6cee8347e43ca756948b1d7b0f19d6d0ce86da1c0c6e4e"
       },
       {
         "bytes": 634921,
         "path": "result/layers/out/axis/part-002.usda",
-        "sha256": "a3f18ee4b6b198110632e9aba8bfc1ff36e8b9d92755a08be05bce35b952fca8"
+        "sha256": "d84577091ef63bb3a6e8b4684588d3e56e495ec2753c8ba4c52add9406be067b"
       },
       {
         "bytes": 375910,
         "path": "result/layers/out/axis/part-003.usda",
-        "sha256": "62cb4c8d1280bcac08b263407feacb552dfea9652f912c7c97ff86ba3cee3536"
+        "sha256": "b9606773f782a8b7c6c39c6dd7140ce7e00abd8bbb6113880902a75c367e0065"
       },
       {
         "bytes": 289,
         "path": "result/layers/out/axis.derived.usda",
-        "sha256": "089333d109db1d766844e6c9d701d067b67ef628f49da411f464580bb7e546b9"
+        "sha256": "2bf91bb1f5273a643862411e382f906c3dae1398b54f4e2c88a218e599d031a2"
       },
       {
         "bytes": 64945,

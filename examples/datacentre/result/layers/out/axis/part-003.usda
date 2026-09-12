@@ -2,7 +2,7 @@
 (
     customLayerData = {
         string "aeco:axis:layer" = "derived"
-        string "aeco:axis:producer" = "aeco-axis 0.1.2"
+        string "aeco:axis:producer" = "aeco-axis 0.1.3"
     }
 )
 
@@ -25,7 +25,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "872f1c7a-499a-564c-829a-08a3345cf927"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -51,7 +51,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d4bc080c-2d56-5c6b-b9e6-0a381afdd8b9"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -77,7 +77,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2d813df5-f954-52bf-bbe8-a0130838d932"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -103,7 +103,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "69af4b97-67d7-54a4-8d56-9a4fa9976f1d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -129,7 +129,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "37aeef84-88db-53b7-84f3-8a435b94a71a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -155,7 +155,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2b905032-337e-5b59-8220-4dce999406ee"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -181,7 +181,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ebb6c27b-0a7e-5ba5-9621-0acd688d66d0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -207,7 +207,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "22197af2-4e6f-521f-9f65-37c4799f8752"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -233,7 +233,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a8154bfb-ee4f-51f7-b551-2607b16b066d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -259,7 +259,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6537613e-b4c8-5438-add3-89b8f103c499"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -285,7 +285,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1947dd26-237d-5c53-81a2-6344b2b5057d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -311,7 +311,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "238c564d-08bd-5814-a687-38c260225618"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -337,7 +337,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5a7c2aa2-6dac-586f-9c9a-87d2a62726ad"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -363,7 +363,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "aa7b5d91-1c90-5e6a-a1b5-a5824eeaf30b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -389,7 +389,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e68c5e91-ab66-55d5-a291-5adf891e1b86"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -415,7 +415,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f44ec1ac-b130-59a2-a0f7-c72fb2b356bd"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -441,7 +441,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0c272fdb-76bd-5989-8317-c28e7cee74d6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -467,7 +467,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4f224d35-6b3f-5b91-8caa-97681418b506"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -493,7 +493,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "72300eb4-b3f4-5385-9430-46db121d25f6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -519,7 +519,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "bd9d4304-a47a-5ac3-9bb9-c2bbfc1dcbb0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -545,7 +545,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "68a1a7ef-2d07-576f-90db-1aff48d3461d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -571,7 +571,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "00d7de4f-c517-5602-ae67-ca6d0c63d2f2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -597,7 +597,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2e81b084-a781-5f72-b554-df0a6b13df78"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -623,7 +623,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "07631f22-6d0c-5fc6-9465-52d7524e143c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -649,7 +649,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e50f997b-1966-5b47-9ba1-1767d04dcc34"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -675,7 +675,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8d15ec3b-4306-5076-8f45-f7a8b8b90dd4"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -701,7 +701,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7d7514a6-665b-5e38-8c32-a59ed93e43f6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -727,7 +727,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "07ba9a5d-cdc4-52a5-a8ec-cba0cf6f5b4d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -753,7 +753,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e4505ee2-2d59-505f-a4d1-6149952098d8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -779,7 +779,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "20a6e7f4-1d71-5e9d-89d1-107c55d6aa6d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -805,7 +805,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5a5bc675-9ae8-5bf8-bbbe-09101192fa17"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -831,7 +831,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "347201ca-3eab-583c-be8b-c1d4102d05f5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -857,7 +857,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "41ccac62-ea4b-5d57-9a76-d4297bb2249d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -883,7 +883,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7a91c3d5-4c39-5769-833b-c2afe6902ac5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -909,7 +909,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "da878d76-e302-54cc-bbb2-6c72b2c964a9"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -935,7 +935,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "cacceb5e-cd52-54db-b854-9f7fc5a4c571"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -961,7 +961,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5f28f3ff-8fc4-5c23-87b1-5c6674ed5d3a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -987,7 +987,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "26c6d3ad-f9ac-5bef-b04f-dec06732d64c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1013,7 +1013,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "eaa19746-2379-5748-88b3-f145b955d6c1"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1039,7 +1039,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "86fe92c5-d15d-5ff0-8a04-c70f69499048"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1065,7 +1065,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "689a2ea6-32f0-57f1-a6a1-4dca6cde5a7f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1091,7 +1091,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7fea2053-4ba5-5831-a16c-e50c527e6005"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1117,7 +1117,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1b0d5fb1-b27d-5d31-bd46-2079c671c4d8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1143,7 +1143,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "311c329d-3c21-5530-a7f3-f790c54ff02b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1169,7 +1169,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "76d9d8f2-67c6-5913-ace6-d5755d17b894"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1195,7 +1195,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f16ad9d8-e04c-5541-ac71-a34b438a8bb3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1221,7 +1221,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "99a9bc9e-28ef-57e4-9bf5-a3f523af2e44"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1247,7 +1247,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d38b0ff3-1bb3-50c4-b046-b9e0d5a9e94a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1273,7 +1273,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3c7b533e-261c-58ad-a90c-c8d6ed04ea40"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1299,7 +1299,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "74bf38b5-f354-5a34-8261-e5584dfc55da"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1325,7 +1325,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "cee6a4e4-efb5-544e-84a6-e6a0870366b3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1351,7 +1351,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ea9ba598-75e0-582c-beb7-410d33e4df49"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1377,7 +1377,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "dc64f5cf-ebd7-534c-919d-4d35e36aae90"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1403,7 +1403,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ca937594-600d-56d6-9f28-f0f51520c237"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1429,7 +1429,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "659a0f48-adfb-5463-9077-c13b6be7fcae"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1455,7 +1455,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "bf8422a5-f2cb-5cf7-938e-7322e83c03e1"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.33)]
@@ -1481,7 +1481,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8adae43e-c84a-5251-b4fd-d419d29eec16"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -1507,7 +1507,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a9c1b720-cfc1-58cf-8ccc-bfc7ead31345"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 5.455)]
@@ -1533,7 +1533,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3d2ecaf4-6f2b-59c9-bf0f-d27dba32f504"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 5.455)]
@@ -1559,7 +1559,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e4cdc904-8216-59e4-8b23-ac3263d4b872"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.43)]
@@ -1585,7 +1585,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b5a9ab5a-fa97-588e-9f12-ee75944b702c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.43)]
@@ -1611,7 +1611,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "04b5e815-e728-5c4d-9e38-a16845c61957"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.13)]
@@ -1637,7 +1637,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "24aead0f-c810-5c8a-9764-501b121d3ec3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.13)]
@@ -1663,7 +1663,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c599807a-f719-5ac9-88af-f98446c4a5d1"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1689,7 +1689,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "01bf7c64-c7af-5c5e-8ae4-a4e3bdd5be32"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1715,7 +1715,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a3568f10-52a3-5c7d-be5b-ad49737e7fb8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1741,7 +1741,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3e097e23-1a55-517d-9482-62dd5df5198d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1767,7 +1767,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b31c9a40-0fb8-528e-ab66-1c16e76b51db"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1793,7 +1793,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "fbfbe7a3-543e-5d2c-b109-f7830e814322"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1819,7 +1819,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8c3a5a3c-5873-50fd-ab99-50344927da87"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1845,7 +1845,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "78a1c645-5c91-5e70-9233-83441fa35f74"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1871,7 +1871,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4cfd3033-4d15-56fa-9ed6-fe560c1a4dbf"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1897,7 +1897,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e1bb644a-43cb-502a-929a-b123e6cca554"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841860041784457e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.055)]
@@ -1923,7 +1923,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ed4fe74d-3e51-573c-aef7-ff09f5ba3f9a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1949,7 +1949,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1c3918d4-206e-516a-a920-d030e27e0922"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.03)]
@@ -1975,7 +1975,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "24d82c05-1f7b-5b3c-b832-7606221116d2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.13)]
@@ -2001,7 +2001,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "21222f5f-4efd-599e-9ae3-ed4c988269c0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.13)]
@@ -2027,7 +2027,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3db075f5-f655-5777-a28d-f872e23866c1"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.716613766689079e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.0225)]
@@ -2053,7 +2053,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f5729cc6-344d-5f6e-b241-fcfafecae4f7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.716613766689079e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.3975)]
@@ -2079,7 +2079,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "57379657-0d3d-5093-835b-529f5d594dbc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073489454513037e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.8225)]
@@ -2105,7 +2105,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "35de671d-ea06-5c46-852e-d1d1f368ab5f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.1444091807533141e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.0975)]
@@ -2131,7 +2131,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "84270fcb-051c-530e-8c3d-473b608ff940"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.051757815342171e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 10.0225)]
@@ -2157,7 +2157,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1e2d78a0-6274-597c-b100-4e4d399e657b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.716613766689079e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.3975)]
@@ -2183,7 +2183,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4638f045-7f78-57f6-8d89-b3cb3db8fb60"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.5776366874861196e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 9.8225)]
@@ -2209,7 +2209,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "75c3cd4f-5b9a-5764-919f-74aa9a1c7f23"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.1444091807533141e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.0975)]
@@ -2235,7 +2235,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7819b04a-a3d0-5f28-8751-2a09929e1ac9"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.716613766689079e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.0225)]
@@ -2261,7 +2261,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "45f948a9-9d14-5633-9e30-b557cd6e22d7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.716613766689079e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.3975)]
@@ -2287,7 +2287,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ad9bd7f7-b62b-523a-b56e-a98da16574e8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073489454513037e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.8225)]
@@ -2313,7 +2313,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "bf82fb6a-9ff5-502d-af8b-744f4ab79da8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.1444091807533141e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.0975)]
@@ -2339,7 +2339,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ac567d87-a9a9-5964-bb10-275a886ec57d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2365,7 +2365,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7f43420d-0995-5895-a78e-b4d2da6ec09a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742950899679e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2391,7 +2391,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "84015258-84c7-56a8-9008-149f0f125019"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.205)]
@@ -2417,7 +2417,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "143c5d93-b943-5aae-a9fc-36d56c5c7b01"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716530855236e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.705)]
@@ -2443,7 +2443,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6347a0eb-378f-5587-8c3a-7df75a657f76"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2469,7 +2469,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c78e7a9e-68e3-5d2a-84c9-bf1313fdd449"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2495,7 +2495,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4ff8bf5f-34fa-55a9-bb44-b2515b10abeb"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.814697322468419e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 27.43)]
@@ -2521,7 +2521,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "907e403f-aba7-549a-80fa-61d58718d3e6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.814697322468419e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 27.43)]
@@ -2547,7 +2547,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2aaab19d-b595-52a4-938a-9235177ed7e5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.63)]
@@ -2573,7 +2573,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6498f499-72fd-58d5-a377-fba08928e660"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.4901146982992941e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.13)]
@@ -2599,7 +2599,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1c7fbb0c-edc5-583f-a237-ddb1ed791805"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742950899679e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2625,7 +2625,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ae087c43-27a0-59a5-9518-517e0a6cfedc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.205)]
@@ -2651,7 +2651,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "07187d99-00f5-5ce2-aea4-0a92c7b34120"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2677,7 +2677,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "bc9aa96d-4de9-5c1d-b81f-da805e4f5e7f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.4901146982992941e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.13)]
@@ -2703,7 +2703,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5490918d-6318-5aef-8dbf-29ede056297c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.63)]
@@ -2729,7 +2729,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "11c8a267-703c-52f1-8328-5aab2d663515"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716530855236e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.705)]
@@ -2755,7 +2755,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "77bb203a-f493-5a15-9307-cd5d8ddefcf9"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536744016713783e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.18)]
@@ -2781,7 +2781,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "19d4bad5-74ab-5316-99c1-798d656e1e0e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.8146972514141453e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 13.38)]
@@ -2807,7 +2807,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2b970732-3d2a-5fe1-aed6-14732d271c60"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.88)]
@@ -2833,7 +2833,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c2399447-41f2-5a25-880f-1487f529e36c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 5.960465898624534e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.38)]
@@ -2859,7 +2859,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d01cd76e-65da-552a-950c-a35a1c445bc2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 5.960465898624534e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.38)]
@@ -2885,7 +2885,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f0adfaf3-d1b0-5c4b-9951-f4010cc7d1bb"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.8146972514141453e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.38)]
@@ -2911,7 +2911,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "293830ec-c8f1-5e53-8a06-1e10997720f8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742595628311e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.13)]
@@ -2937,7 +2937,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6e80497c-bed2-5f45-98ef-9ef2952045df"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742595628311e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2963,7 +2963,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "35baf094-ef8c-5b7a-93a3-a6e47cde48d3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742595628311e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -2989,7 +2989,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5492e063-592f-5a75-8e53-5226357c6435"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841863594498136e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.63)]
@@ -3015,7 +3015,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "acad0986-8a63-511b-8f05-3eed58369f37"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.8146972514141453e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.38)]
@@ -3041,7 +3041,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0e260dca-a59e-5f33-9a9e-cfe7914230b0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 5.960465898624534e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.38)]
@@ -3067,7 +3067,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e0e331a5-cd64-5fa5-93fb-dccb4abb99b2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 5.960465898624534e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.38)]
@@ -3093,7 +3093,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1ced7d0b-2fa0-54ed-9cfe-26ce94240d51"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.88)]
@@ -3119,7 +3119,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3ac61d7c-5054-5d2b-9bcd-453069e86d13"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.8146972514141453e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 13.38)]
@@ -3145,7 +3145,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7ed1ddc2-54ee-5d73-b0fc-9fbea6093e0a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536744016713783e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.18)]
@@ -3171,7 +3171,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e822373b-6ca8-54c8-b16e-7f5c47d338a5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.43)]
@@ -3197,7 +3197,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5d558c71-38eb-5d48-b640-f7def296535b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.384185648907078e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.43)]
@@ -3223,7 +3223,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6ac9a97a-0212-5a81-a25a-4f0fb454c7a6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -3249,7 +3249,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c7013b72-c6ee-5210-819a-dfaa0dbf1f43"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -3275,7 +3275,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f1b2b44e-ca6d-5a4f-8d3b-1cdc233c6e71"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841858265427618e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.93)]
@@ -3301,7 +3301,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4a178804-85c3-5c90-9349-4706ebee1c34"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841858265427618e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.93)]
@@ -3327,7 +3327,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ded6a64b-7062-51e1-b602-7b2a09d39511"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841858265427618e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.93)]
@@ -3353,7 +3353,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5c769bdd-5550-5cbf-a369-4b804528e24c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 2.3841858265427618e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.93)]
@@ -3379,7 +3379,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b6e2ea20-7e71-5ebb-9e94-8caacad65595"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -3405,7 +3405,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5c77e117-e1c0-5929-af35-eb1e11e72d40"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.03)]
@@ -3431,7 +3431,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e86c2be8-228b-51b0-8b39-ec354fb06551"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716530855236e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.98)]
@@ -3457,7 +3457,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "af9810c1-d9da-51f1-ab0f-63bac46cb733"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716086766026e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.98)]
@@ -3483,7 +3483,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e6767157-a068-500d-8788-f1805cdab33a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.78)]
@@ -3509,7 +3509,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743172944284e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.68)]
@@ -3535,7 +3535,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c1b52211-064e-55fc-bc8b-b70cedcabdba"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.192092824453539e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.98)]
@@ -3561,7 +3561,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "9b8b4550-c99d-5c15-9998-f44f587bdc1c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716086766026e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.98)]
@@ -3587,7 +3587,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "783713c0-1489-5aff-845c-73d4a0eb3daf"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.78)]
@@ -3613,7 +3613,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8294a53f-c7d7-5250-9711-fb34fbcb46cd"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743172944284e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.68)]
@@ -3639,7 +3639,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "33450752-78b5-52d7-9999-db2720668ea7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.48)]
@@ -3665,7 +3665,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "44641b5f-531c-58b9-a13e-973f40ca9b3c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716086766026e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.98)]
@@ -3691,7 +3691,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "eeddb272-72ac-5b64-8a63-6db62211513d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.28)]
@@ -3717,7 +3717,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d1370767-cda8-582e-9d9d-1f4de0f6280c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743172944284e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.68)]
@@ -3743,7 +3743,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ff2bac4d-975f-5348-95a9-fc6c5779eb55"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.93)]
@@ -3769,7 +3769,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "290631be-912b-5f95-9f1b-72704b3b3059"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.83)]
@@ -3795,7 +3795,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d1ab9662-94b7-5d32-832f-ac11a4e52bb3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743128535363e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.63)]
@@ -3821,7 +3821,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "076d43f2-983d-5688-9255-eeb4e443ebd2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 5.83)]
@@ -3847,7 +3847,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f102f327-5967-5af9-8878-c724bbd1654d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.83)]
@@ -3873,7 +3873,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "362efdb5-b844-5700-847f-92049bd895bf"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.83)]
@@ -3899,7 +3899,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "3e0e96f0-5323-578c-ac97-8bd49d0b6a72"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.83)]
@@ -3925,7 +3925,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c7a9a263-763f-5ed4-a3fd-359a595381fb"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743128535363e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.63)]
@@ -3951,7 +3951,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2aa4516d-6753-5675-bec4-e279bddaaf5d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.192092824453539e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.33)]
@@ -3977,7 +3977,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d85509e6-73fd-5a93-9cf9-41746510ac9a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.83)]
@@ -4003,7 +4003,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "23b4087e-a06e-5f2c-adaf-fe69c991e03e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.33)]
@@ -4029,7 +4029,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e4b8ed4b-bb06-525a-b907-1cb5c1d03950"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4055,7 +4055,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "89b3feb2-fc06-5f77-bb95-567611e14009"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 5.83)]
@@ -4081,7 +4081,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c4b840bf-ff41-51f5-a918-30ce427451d8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.83)]
@@ -4107,7 +4107,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "83d6fdfe-4535-55d9-9083-bb63a15c550d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.83)]
@@ -4133,7 +4133,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "df504ce9-d061-5fe6-a03a-7780fb64a1ac"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.93)]
@@ -4159,7 +4159,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5b4c830f-18b8-545e-bd53-56c5b2c76e9a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743172944284e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.63)]
@@ -4185,7 +4185,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ad1c1cbf-dc37-5a62-8e4a-673e5e528a63"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486612342094e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.83)]
@@ -4211,7 +4211,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "cb6d5e10-8e41-56f3-adfc-76fc0ea4f8f4"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4237,7 +4237,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2a954098-f20a-56a4-85a1-affe895f627e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683715642676816e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.33)]
@@ -4263,7 +4263,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a2fd8bf3-b856-5af2-a4d0-84b01ad10bed"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.83)]
@@ -4289,7 +4289,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d5462eb0-8136-5eb8-8e9c-835a526a3eac"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.192092824453539e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.33)]
@@ -4315,7 +4315,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "328f89b8-6e3e-5c7c-95c0-700fefd6dcf2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743128535363e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.63)]
@@ -4341,7 +4341,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "eeafc94e-cce4-5d6a-8f7c-b4a73f944691"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 2.83)]
@@ -4367,7 +4367,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0768e069-01af-5e50-85f6-d4dd473245e4"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.93)]
@@ -4393,7 +4393,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "28e2717c-9041-5757-afc9-e0c01f7f6591"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4419,7 +4419,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "76c4368a-21f7-5856-ad94-1a0a83aa61f5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4445,7 +4445,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "63d9294f-42e1-5a4e-86da-1d862bd1dcb2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.93)]
@@ -4471,7 +4471,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "28be8fd8-b1f2-55d9-bc26-e25c2ed5f04a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.93)]
@@ -4497,7 +4497,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1b47f404-d401-5798-8d83-4ff3b5b536c7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4523,7 +4523,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5e474f6d-e598-55af-aa69-43cd6afb358f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.768371297814156e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.83)]
@@ -4549,7 +4549,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "59b6fedd-0b21-54f6-800c-0c271d870eb2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 3.93)]
@@ -4575,7 +4575,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c8c0cb1e-7b65-51dc-a9a6-d265bbc8c8ef"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.1920931797249068e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.955)]
@@ -4601,7 +4601,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "79e44841-f237-5be6-a59a-3b6e76a9ce7e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.1920931797249068e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.955)]
@@ -4627,7 +4627,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c4c59291-3881-52a2-bd1e-c549f5e97748"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.93)]
@@ -4653,7 +4653,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c5f1f7ca-a057-5710-9fe8-dede211557da"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.93)]
@@ -4679,7 +4679,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "9308dabc-2cde-5368-be08-270fb2015bef"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 4.7683716530855236e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 1.705)]
@@ -4705,7 +4705,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e77b6cfc-b6e0-5d37-b595-42f2f5d65b64"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.192092824453539e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 0.605)]
@@ -4731,7 +4731,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a5a50d14-e595-573a-9b88-89b29131c115"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536742950899679e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 5.305)]
@@ -4757,7 +4757,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "222323ec-43f9-5dbf-9f92-ead65629e898"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.205)]
@@ -4783,7 +4783,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e8bc5d8a-e8c8-5fca-84f3-81b064b5fb76"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 8.905)]
@@ -4809,7 +4809,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a94a4f9a-c12b-5bd8-9286-4c040cfc83ad"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 7.805)]
@@ -4835,7 +4835,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b3d1985f-040b-5178-b8ea-874ea811ef91"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 3.814697322468419e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 12.505)]
@@ -4861,7 +4861,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e09c4579-76d7-5c8e-a84c-89c94fc369de"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 11.405)]
@@ -4887,7 +4887,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ed04b784-aa58-566b-9c99-61ddbe4c59c0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -4913,7 +4913,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b3068787-618c-5d7e-9169-44f22befbf2f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -4939,7 +4939,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8aca7f27-a070-53a1-b78b-13ca1efc3258"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.955)]
@@ -4965,7 +4965,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e85c56c0-bbba-5932-88a0-0dcc1e7657a2"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1.9073486257070726e-7
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.955)]
@@ -4991,7 +4991,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "28c72ddf-7623-5a8b-a422-15287abe1fd5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -5017,7 +5017,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4c154727-58d8-5a13-a412-6e834f6346cc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 9.536743306171047e-8
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (0.03, 0.03, 4.88)]
@@ -5043,7 +5043,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c5b2eecc-ed7c-5887-bf69-bb32e4d2ab50"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5069,7 +5069,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "66052d24-a876-58e9-8c3c-e13ecacda4b8"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5095,7 +5095,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "71e31890-692a-57f8-803c-2c888dcdbd21"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (8.03, 0.03, 0.03)]
@@ -5121,7 +5121,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ec2567dc-13cd-5c3c-af0f-cf787afac752"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5147,7 +5147,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "60e1be69-6aef-5ba6-a9ab-7ec2f0f11723"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5173,7 +5173,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c5521242-0ce6-5cee-8cb9-1d35163f743a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5199,7 +5199,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7d8eedae-6895-5d80-b6ea-115a682b8f23"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -5225,7 +5225,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1d7e1387-c398-5fbf-9134-637da0819958"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -5251,7 +5251,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "43f2601f-5aa2-5a08-8e5e-925cd8b3ef61"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5277,7 +5277,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1c9ca349-2b00-5cf7-837d-506b2cf872dd"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -5303,7 +5303,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5bcb03c9-c9b4-5764-8f57-188cabdfb95b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -5329,7 +5329,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "78a45410-36a6-580a-b0ed-e12038cc06ea"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5355,7 +5355,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b860fb30-7649-5023-9434-24bb98c31b39"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (2.03, 0.03, 0.03)]
@@ -5381,7 +5381,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5407,7 +5407,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "88722060-c021-5a17-90c8-b475bfb89f99"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -5433,7 +5433,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "9661d4a7-0907-53cd-9984-9baafda95475"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5459,7 +5459,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "20c3379a-a626-51b9-aca2-fba3a9e196a7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5485,7 +5485,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "bd894995-3044-5b10-a4dd-f99ed7137cb6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5511,7 +5511,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a094d9f0-38ec-5a9d-b0ef-cc2bb18424ba"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5537,7 +5537,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "85af23ed-90e1-5455-abaf-e05ee16881da"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5563,7 +5563,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7e7d99d8-3f0c-5277-9315-fba4182ea700"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5589,7 +5589,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0afbc662-47c9-5e78-ae91-c078e0bbeb0c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5615,7 +5615,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f92bd56a-3f17-5b3f-9fd5-f8c9916789bf"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5641,7 +5641,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c23525b0-dee0-505c-a1bd-964d40148d21"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5667,7 +5667,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "834476fd-7c5d-58e0-95c6-948ca58b8b1b"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5693,7 +5693,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "dea22b37-5807-578b-a829-427eae631264"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (24.03, 0.03, 0.03)]
@@ -5719,7 +5719,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ae312e48-99f4-5056-9994-243ebcb726af"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5745,7 +5745,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "55570d0d-f3c5-5dae-af59-d06a8badf356"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -5771,7 +5771,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "832dc216-dde4-5469-ad2f-9861482af4ac"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (12.03, 0.03, 0.03)]
@@ -5797,7 +5797,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b78ec42c-8ee7-56b9-a65d-c81cd194d6bf"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5823,7 +5823,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f510d543-b77c-563c-951d-3ccdb0b7fe4e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (30.03, 0.03, 0.03)]
@@ -5849,7 +5849,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4c4faca8-bf17-509b-9fba-06c60c8e5c17"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5875,7 +5875,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "072b7db3-7d35-514d-8444-856141e63d56"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (30.03, 0.03, 0.03)]
@@ -5901,7 +5901,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "ee58dbe0-13ad-5584-974d-7bf05bc24e56"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5927,7 +5927,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "fd7b4ef8-6a8f-5741-b064-960e7971890e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -5953,7 +5953,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "217924b4-ac20-5753-bb29-416a87f2401a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (30.03, 0.03, 0.03)]
@@ -5979,7 +5979,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "8b80ffe1-fc4c-53ce-b444-6b3f96159451"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -6005,7 +6005,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "99469ea9-f742-5ade-b174-c7b629bd687f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (30.03, 0.03, 0.03)]
@@ -6031,7 +6031,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "07976b00-60fc-5a2b-8c2d-703c2692fbca"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -6057,7 +6057,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "307e8d33-b7d1-56eb-83d4-25340c274e51"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6083,7 +6083,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "7e3a9857-15fd-5edd-937a-0249084e8853"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6109,7 +6109,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "595cfa6d-7f1a-5a77-8c80-44dd0c5d8d26"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6135,7 +6135,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0d64ce24-0556-5746-9192-2cef2826a59f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6161,7 +6161,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "80f740b1-eeeb-5e31-8bc4-82b1703790f3"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6187,7 +6187,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b89acbd4-f5cf-55f0-9da7-ace74173330a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6213,7 +6213,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "dc3ad40e-8182-548f-8dac-4d5e34b0741e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6239,7 +6239,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "15432383-09a8-5012-9a8f-a4be28829f53"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6265,7 +6265,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0cd88101-93dd-58c7-9dac-162abc9a8b47"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6291,7 +6291,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "660d3fe1-7bd9-580d-a6cb-aa22831924ac"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6317,7 +6317,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c57c7fbd-5a68-539a-9339-e42233bc2ab5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6343,7 +6343,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "004152ed-5713-552c-9e02-85faed34ad3a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6369,7 +6369,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4bc47e09-5c07-527b-b0d0-56f893e17c78"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6395,7 +6395,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1241ed4c-0214-5035-9271-93e6806cef33"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6421,7 +6421,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d7e4ff7e-52c7-58ca-bf41-d1417db973a5"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6447,7 +6447,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "651936bf-b4ee-5ea9-a21b-866398f30f77"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6473,7 +6473,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a568b0b9-6c3a-54a7-bac8-222c49c35ca4"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6499,7 +6499,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "894bd368-7314-54e9-b54f-b51834a01c64"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6525,7 +6525,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0fded623-5c36-5b11-b090-f8fc2fb4c79a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6551,7 +6551,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "f095bd7e-578d-5c18-8d73-bb5afa02b77f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6577,7 +6577,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "80a8c2e5-169e-5679-b986-d76549b417da"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6603,7 +6603,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "427902f8-bced-5f10-a65f-16a96df9f571"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6629,7 +6629,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d63afdfa-a5c3-5f76-a4fc-83ec000af813"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6655,7 +6655,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "06ca674f-dc00-5c5f-b07a-56428324d860"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6681,7 +6681,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1baea872-21a7-5eb8-a874-13764726cae9"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6707,7 +6707,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2493fdd9-02f8-5ff6-93ef-b6de8153d7dc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6733,7 +6733,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "a2993c14-5130-589f-b0aa-7b7e784d07f1"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6759,7 +6759,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "5e3f27c2-626e-599a-bc88-768d848eb87f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6785,7 +6785,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4e1444ae-2116-555c-8c21-67cf7d462b30"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6811,7 +6811,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "0afa3cab-7106-58c1-8897-eafb049c9896"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6837,7 +6837,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "35bc9689-2e98-53ef-beae-d27830c8f086"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (6.03, 0.03, 0.03)]
@@ -6863,7 +6863,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "97d01964-e81f-5e05-ac51-df6fcc16c13c"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -6889,7 +6889,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6f521d91-5f68-5da9-9064-0a2f3b528dbc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -6915,7 +6915,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "9de89376-97fc-56b7-833e-8461d54b410e"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (18.03, 0.03, 0.03)]
@@ -6948,7 +6948,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "e230a24f-4b3f-503b-a65d-4641640e8b5a"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 1.9221920383523775e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(27.97, -1.93, 2.97), (28.03, -1.87, 6.83)]
@@ -6974,7 +6974,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "f197c006-1d48-5d32-9aab-55f6e27f7a11"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 2.1324806018660452e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(27.97, -2.18, 2.97), (28.03, -2.12, 6.83)]
@@ -7000,7 +7000,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "5c1bcae1-aed8-5d1a-bffe-e8eb8bc50f6f"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 1.9073486345888568e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(23.97, -4.03, 6.77), (24.03, -1.97, 6.83)]
@@ -7026,7 +7026,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "6e5a2055-fc33-5dd4-8df1-af4a6e337adb"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 4.425048860667857e-8
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(22.97, -1.53, 6.85515), (25.03, -1.47, 6.91515)]
@@ -7052,7 +7052,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "f48386c3-5bfd-55b0-8010-7c0321905d51"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 1.9137503974152177e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(22.97, -2.92485, 6.77), (25.03, -2.86485, 6.83)]
@@ -7078,7 +7078,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "2df12127-2bce-58a4-b767-5f0747057b63"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 7.629394538355427e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(15.97, -1.53, 6.77), (16.03, -1.47, 19.83)]
@@ -7110,7 +7110,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "6f112a2a-4c87-5137-8c68-d0e86d9ff833"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 1.9073486345888568e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(12.97, -6.53, 6.77), (13.03, -6.47, 14.83)]
@@ -7136,7 +7136,7 @@ def "demo_datacentre_01"
                                 uniform token aeco:derived:approx = "exact"
                                 uniform token aeco:derived:role = "axis"
                                 string aeco:derived:source = "81e9ca85-7c2f-5b47-8eac-b89408b7c6bc"
-                                string aeco:derived:stamp = "aeco-axis 0.1.2"
+                                string aeco:derived:stamp = "aeco-axis 0.1.3"
                                 double aeco:derived:tolerance = 1.9073486345888568e-7
                                 int[] curveVertexCounts = [2]
                                 float3[] extent = [(12.97, -8.53, 6.77), (13.03, -8.47, 14.83)]
@@ -7166,7 +7166,7 @@ def "demo_datacentre_01"
                             uniform token aeco:derived:approx = "exact"
                             uniform token aeco:derived:role = "axis"
                             string aeco:derived:source = "48a8a942-99cd-5139-a9d6-41575476d93f"
-                            string aeco:derived:stamp = "aeco-axis 0.1.2"
+                            string aeco:derived:stamp = "aeco-axis 0.1.3"
                             double aeco:derived:tolerance = 5.394796601857992e-7
                             int[] curveVertexCounts = [2]
                             float3[] extent = [(27.37, -10.03, 4.12), (27.43, -9.97, 10.18)]
@@ -7193,7 +7193,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "1aba178f-cac6-5655-9fb3-22c675cc2dd7"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (10.03, 0.03, 0.03)]
@@ -7219,7 +7219,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "4556958a-1b5c-5eeb-89a9-7cf49af08c5a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7245,7 +7245,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "aeedc717-acaa-5458-8d1e-acd1bcfa095d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7271,7 +7271,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "9765b9c4-40bb-5ff7-a2a5-cdebad75b0bc"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7297,7 +7297,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "e045c7cd-b953-5b4a-936b-b64d2bda214d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -7323,7 +7323,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "93888444-e546-5ddb-a4ba-166a6073c262"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (7.03, 0.03, 0.03)]
@@ -7349,7 +7349,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "51468e7f-5fca-54c5-9547-9c7f5cb51055"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7375,7 +7375,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "43540151-c12f-56c9-b032-2b64fd66c8e4"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7401,7 +7401,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "cc8f6368-1f30-53e5-a842-8fd3461d0ac6"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -7427,7 +7427,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "46bb8ddc-66ac-5ee6-ba2f-72feb5bf8844"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (15.03, 0.03, 0.03)]
@@ -7453,7 +7453,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "dd5cf3a2-629b-502e-bc90-de3eee629131"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -7479,7 +7479,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "64c0b776-f5b1-556b-8a27-116d0f4e1b6f"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -7505,7 +7505,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "54f3cd30-3297-5932-8281-adfb776aab7d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]
@@ -7531,7 +7531,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "2a39d1c5-51fc-50c0-b5ab-579342c7c597"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (9.03, 0.03, 0.03)]
@@ -7557,7 +7557,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "c46e4871-96dd-54c4-af2b-1a161d7f1f55"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7583,7 +7583,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "d008ead2-8996-54f8-9ced-7345cc4a0a8d"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (5.03, 0.03, 0.03)]
@@ -7609,7 +7609,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "17fabf2a-db55-5b3d-acbe-4cc963ed34b0"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (4.03, 0.03, 0.03)]
@@ -7635,7 +7635,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "b8ad6534-0347-5bac-9654-5ba0bb28183a"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (5.03, 0.03, 0.03)]
@@ -7661,7 +7661,7 @@ def "demo_datacentre_01"
                         uniform token aeco:derived:approx = "exact"
                         uniform token aeco:derived:role = "axis"
                         string aeco:derived:source = "6401b4a1-b2f1-5eb6-9378-29e500fe9c37"
-                        string aeco:derived:stamp = "aeco-axis 0.1.2"
+                        string aeco:derived:stamp = "aeco-axis 0.1.3"
                         double aeco:derived:tolerance = 1e-9
                         int[] curveVertexCounts = [2]
                         float3[] extent = [(-0.03, -0.03, -0.03), (3.03, 0.03, 0.03)]

@@ -1,7 +1,7 @@
 {
   "checks": [
     {
-      "detail": "usdAeco 0.9.1, usdAecoAxis 0.1.1, usdAecoPipe 0.2.1",
+      "detail": "usdAeco 0.9.5, usdAecoAxis 0.1.5, usdAecoPipe 0.2.5",
       "name": "plugin requirements",
       "passed": true
     },
@@ -201,7 +201,7 @@
       "passed": true
     },
     {
-      "detail": "findings and committed result match; 14153 plugin-free prims; 1 non-blank renders; source pinned",
+      "detail": "findings and committed result match; 14153 plugin-free prims; 1 non-blank renders; source pinned; elapsed 28.659s / budget 180s",
       "name": "example harness",
       "passed": true
     },
@@ -246,7 +246,7 @@
       "passed": true
     },
     {
-      "detail": "family MIT policy; upstream S01 requires Apache-2.0 (documented deviation)",
+      "detail": "MIT (inferred)",
       "name": "S01",
       "passed": true
     },
@@ -366,7 +366,7 @@
       "passed": true
     },
     {
-      "detail": "term sweep clean except required MIT copyright line; full licence hash verified",
+      "detail": "terms",
       "name": "S25",
       "passed": true
     },
@@ -381,17 +381,22 @@
       "passed": true
     },
     {
-      "detail": "stock Embree render: 1280x800, 168527 bytes, non-uniform",
+      "detail": "stock Embree render: 1280x800, 168537 bytes, non-uniform",
       "name": "S28",
       "passed": true
     },
     {
-      "detail": "9 links resolve (anchors and remote URLs skipped)",
+      "detail": "9 asset paths use example inputs/, archived layers or documented resolver tokens",
+      "name": "S29",
+      "passed": true
+    },
+    {
+      "detail": "10 links resolve (anchors and remote URLs skipped)",
       "name": "local documentation links",
       "passed": true
     },
     {
-      "detail": "14 links resolve (anchors and remote URLs skipped)",
+      "detail": "17 links resolve (anchors and remote URLs skipped)",
       "name": "local documentation links",
       "passed": true
     },
@@ -401,156 +406,12 @@
       "passed": true
     },
     {
-      "detail": "86 text files, no matches",
+      "detail": "89 text files, no matches",
       "name": "term sweep",
       "passed": true
     }
   ],
   "importer": "passed",
-  "minimal_validation": {
-    "core_rules_loaded": 8,
-    "errors": 0,
-    "warnings": 0
-  },
-  "nix": {
-    "attempts": 1,
-    "reason": "public axis v0.1.1 source returned HTTP 404; no build ran",
-    "status": "not proven"
-  },
-  "passed": 81,
-  "pinned_composed_core_validation": {
-    "errors": 0,
-    "scope": "utility-intake proxy classifications inherited from source",
-    "warnings": {
-      "proxyClassified": 2
-    }
-  },
-  "pins": {
-    "axis": {
-      "library": "usdAecoAxis",
-      "ref": "v0.1.1",
-      "repo": "usdaeco-axis"
-    },
-    "core": {
-      "library": "usdAeco",
-      "ref": "v0.9.1",
-      "repo": "usdaeco-core"
-    },
-    "datacentre": {
-      "library": "usdaeco-datacentre",
-      "ref": "v0.4.1",
-      "repo": "usdaeco-datacentre"
-    },
-    "ifc": {
-      "library": "usdaeco-ifc",
-      "ref": "v0.1.0",
-      "repo": "usdaeco-ifc"
-    },
-    "toolchain": {
-      "library": "usdaeco-toolchain",
-      "ref": "v0.3.1",
-      "repo": "usdaeco-toolchain"
-    }
-  },
-  "published_crate_term_sweep": "clean after stock Sdf serialization",
-  "pytest": {
-    "failed": 0,
-    "mode": "source checkout; no editable install",
-    "passed": 20
-  },
-  "raw_structure": {
-    "failures": {
-      "S01": "Apache-2.0 license text required",
-      "S25": "term sweep: LICENSE:3"
-    },
-    "passed": 26,
-    "policy": "MIT text and copyright line verified by full-file hash; all other findings fail",
-    "total": 28
-  },
-  "result": {
-    "bytes": 5614113,
-    "files": [
-      {
-        "bytes": 865,
-        "path": "result/README.md",
-        "sha256": "5aec2dabf2d1c00e4dd58450f6d904cf6adcd187719393fbf00078e0c71fbdeb"
-      },
-      {
-        "bytes": 1784152,
-        "normalized_sha256": "80025131413533b5c191a5e7c03cb5a5fc5a0d6d2e03b41ecef6a9cde2935b29",
-        "path": "result/example.usdc",
-        "sha256": "a023e20cdae01ac85251677ce3b838e7b621aa312686df9bee3a2bdd956be25f"
-      },
-      {
-        "bytes": 1241,
-        "path": "result/layers/inputs/axes.usda",
-        "sha256": "840838c20fc367e6e2fb864d270a86801b960c4cdf3d8412cf499c5b508e9644"
-      },
-      {
-        "bytes": 386,
-        "path": "result/layers/inputs/cameras.usda",
-        "sha256": "71c493d5101efdc42272a3c9f62cacb8eaf3416a242363f00e89a78b1d456be3"
-      },
-      {
-        "bytes": 640086,
-        "path": "result/layers/out/axis/part-000.usda",
-        "sha256": "3711e3fa52f763a9c61579e4707d633e248c4a84dfd2ff7a99afcf14fcf6a476"
-      },
-      {
-        "bytes": 643604,
-        "path": "result/layers/out/axis/part-001.usda",
-        "sha256": "5969f371fe35b430d4eff7ad0274d10d8dfb3c04dae3e59499ddebff36dddc20"
-      },
-      {
-        "bytes": 634921,
-        "path": "result/layers/out/axis/part-002.usda",
-        "sha256": "02425e1832bf237b95a905d2a488ac14e764483e5990826312a2fa27ad5aaeff"
-      },
-      {
-        "bytes": 375910,
-        "path": "result/layers/out/axis/part-003.usda",
-        "sha256": "b6c2905957671ddd241b92489e4290291d2ec1facb87f34a12dd4ea8355395ef"
-      },
-      {
-        "bytes": 289,
-        "path": "result/layers/out/axis.derived.usda",
-        "sha256": "b7cc602e48c15b628eb91649bcdc09b2ddca0e8da5b080e3b6f0884c3feefa5d"
-      },
-      {
-        "bytes": 64945,
-        "path": "result/layers/out/pipe.derived.usda",
-        "sha256": "9594c8c7f8c67514157008af861f510ff2f4f194844f99514af2d087bea67f4e"
-      },
-      {
-        "bytes": 450574,
-        "path": "result/layers/out/pipe.usda",
-        "sha256": "26c5d8446fb8397c1fec4b815d0a54c700f7f8f94e14b59f200a67ef87ec7101"
-      },
-      {
-        "bytes": 847944,
-        "path": "result/layers/out/presentation.usda",
-        "sha256": "4a1ee34b6f8b69e594a0e7018121978b4aab37554786c8f50bb5050f1cffecc8"
-      },
-      {
-        "bytes": 669,
-        "path": "result/layers/out/source.usda",
-        "sha256": "36994b8258e1cab5968f12de8de2cd59f87be4d1ed43e50279038d206f5755f5"
-      },
-      {
-        "bytes": 168527,
-        "path": "result/vanilla.png",
-        "sha256": "c241b2b31c491363b731788cc587bbe7c92200b2fcff0476e60e5da13ff3d505"
-      }
-    ],
-    "normalization": "sdf-usda-v1",
-    "prim_count": 14153,
-    "vanilla": {
-      "bytes": 168527,
-      "height": 800,
-      "path": "result/vanilla.png",
-      "sha256": "c241b2b31c491363b731788cc587bbe7c92200b2fcff0476e60e5da13ff3d505",
-      "width": 1280
-    }
-  },
-  "total": 81
+  "passed": 82,
+  "total": 82
 }

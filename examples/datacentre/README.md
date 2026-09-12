@@ -1,6 +1,6 @@
 # Route K pipes in the L01 ceiling void
 
-Input: the published `dist/clash/dc.usda` from `usdaeco-datacentre` v0.4.5.
+Input: the published `dist/clash/dc.usda` from `usdaeco-datacentre` v0.4.8.
 `AECO_DATACENTRE_ROOT` selects the checkout; the runner defaults to the named
 sibling and verifies its version. If that sibling has advanced, it exports the
 pinned local Git tag into ignored `out/pins/` without modifying the sibling. `AECO_DATACENTRE_STAGE` is an explicit
@@ -43,7 +43,7 @@ Red: hard-case sweep. Amber: near-case sweep. Green: tangent-case sweep.
 Blue: chilled-water pair. These colors identify fixtures; no collision solver
 runs here. Roof and other geometry outside the void band are hidden for this
 view. Every `role = extent` guide is explicitly invisible. The final render uses
-`--purposes guide,proxy,render`; the kit's v0.3.5 harness first renders its fixed
+`--purposes guide,proxy,render`; the kit's v0.3.10 harness first renders its fixed
 proxy/render pass, then the runner refreshes the image and measured manifest
 using the same renderer with guides enabled. `result/vanilla.png` independently
 uses the S28 proxy/render purposes without family plugins; source extent guides

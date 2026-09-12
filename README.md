@@ -23,7 +23,7 @@ remains `aeco:id`, and connectivity remains the core port graph.
 
 ## The example
 
-The pinned `usdaeco-datacentre` v0.4.5 clash stage supplies 482 pipe segments and
+The pinned `usdaeco-datacentre` v0.4.8 clash stage supplies 482 pipe segments and
 238 fittings. The importer promotes its property sets, `aeco-axis derive` writes
 separate guides, and the Python validator plugin checks the composed stage.
 
@@ -51,17 +51,18 @@ the chilled-water pair. These are identity colors, not computed clash verdicts.
 Use sibling source checkouts at the refs in [dependencies.json](dependencies.json).
 Set `AECO_PYTHON` to the Python environment providing USD 26.8, IfcOpenShell 0.8.5,
 numpy, jinja2, packaging, pytest and Pillow. No editable install or setuptools is
-needed to run the tools or tests. Core and axis plugins must already be built.
+needed to run the tools or tests. Use the committed codeless resource plugins from those tagged releases.
 
 ```sh
 export PYTHON="$AECO_PYTHON"
+export PYTHONDONTWRITEBYTECODE=1
 export TOOLCHAIN_DIR="$(cd ../usdaeco-toolchain && pwd)"
 export AECO_CORE_ROOT="$(cd ../usdaeco-core && pwd)"
 export AECO_AXIS_ROOT="$(cd ../usdaeco-axis && pwd)"
 export AECO_IFC_ROOT="$(cd ../usdaeco-ifc && pwd)"
 export AECO_DATACENTRE_ROOT="$(cd ../usdaeco-datacentre && pwd)"
-export CORE_PLUGIN_DIR="$AECO_CORE_ROOT/out/plugins/usdAeco/resources"
-export AXIS_PLUGIN_DIR="$AECO_AXIS_ROOT/out/plugins/usdAecoAxis/resources"
+export CORE_PLUGIN_DIR="$AECO_CORE_ROOT/usdAeco"
+export AXIS_PLUGIN_DIR="$AECO_AXIS_ROOT/usdAecoAxis"
 export PXR_PLUGINPATH_NAME="$CORE_PLUGIN_DIR:$AXIS_PLUGIN_DIR:$(pwd)/usdAecoPipe:$(pwd)/usdAecoPipeValidators"
 bash build.sh --generate-only
 bash build.sh --install-root out
@@ -71,7 +72,7 @@ env -u PYTHONPATH "$AECO_PYTHON" -m pytest -q
 
 `check.py` prints `N checks, M failed`, runs every original acceptance check,
 then `check_example()` (fresh-result comparison and independent vanilla render)
-and S01–S29 structure lint from toolchain v0.3.8. `--without-importer`
+and S01–S29 structure lint from toolchain v0.3.10. `--without-importer`
 explicitly omits IFC regression checks. `--baseline input.ifc` additionally
 selects an external baseline; fixtures are generated in temporary directories.
 Core loads first because it registers `aecoDerived`. All eight core validator
@@ -96,7 +97,7 @@ Nix inputs use public exact refs. A local checkout or private registry can suppl
 the sources without committing deployment addresses:
 
 ```sh
-nix flake check --no-write-lock-file \
+nix flake check --offline --no-write-lock-file \
   --override-input toolchain path:../usdaeco-toolchain \
   --override-input core path:../usdaeco-core \
   --override-input axis path:../usdaeco-axis \
@@ -104,16 +105,16 @@ nix flake check --no-write-lock-file \
   --override-input datacentre path:../usdaeco-datacentre
 ```
 
-See the [toolchain conventions](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.8/docs/repo-conventions.md)
+See the [toolchain conventions](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.10/docs/repo-conventions.md)
 for nested input overrides. `nix run .#example` runs the data-centre example;
 `nix run .#render` renders the minimal pipe run with guides enabled.
 
 ## Family
 
 Runtime requirements: `usdAeco >=0.9,<1.0`, `usdAecoAxis >=0.1.1,<0.2`.
-Verified pins: core v0.9.2, axis v0.1.2, toolchain v0.3.8, data centre v0.4.5,
-IFC v0.2.0 for synthetic regression conversion. The published data-centre stage
-was produced against core v0.8.4; its stage vocabulary still composes on core v0.9.2.
+Verified pins: core v0.9.5, axis v0.1.5, toolchain v0.3.10, data centre v0.4.8,
+IFC v0.2.2 for synthetic regression conversion. The published data-centre stage
+was produced against core v0.8.4; its stage vocabulary still composes on core v0.9.5.
 There is no dependency on wall, clash, sync, or an authoring-tool integration.
 The [family board](https://github.com/criad-com/usdaeco-board) consumes the same
 metadata and evidence files.
@@ -129,22 +130,28 @@ regressions and the released schema snapshot. `docs/usecase.md` describes Route 
 
 ## Status
 
-Version **0.2.4** uses public **github.com/criad-com** names and toolchain
-**v0.3.8**. The full gate passes **82 checks, 0 failed, 0 not run** against
-[the exact dependency pins](dependencies.json). All **29 structure rules**
-pass, including S05 and S25; **20 pytest tests pass**. All eight core validators
-load through UsdValidation.
+Version **0.2.5** pins public release tags for every family input and records
+all five checked revisions in [dependencies.json](dependencies.json). The source
+gate passes **82 checks, 0 failed, 0 not run**, including **29/29 structure
+rules** and all **eight core validators**. All **20 pytest tests pass**.
+[Acceptance evidence](docs/acceptance.md) records the measurements and Nix outcome.
 
-The published result and renders remain byte-identical to v0.2.3. The result
-totals **5,614,609 bytes**, within the 10 MB cap. S27/S28 and the fresh-result
-comparison pass. Only the example manifest's toolchain pin changed; no result
-was republished. Earlier [relocation verification](docs/relocation-verification.md)
-records the portable source layout.
+The example was republished with toolchain **v0.3.10**. Its source bytes and
+findings are unchanged. Six of 11 editable layers are byte-identical; the other
+five and the flattened crate differ only in the upstream axis producer string,
+`aeco-axis 0.1.2` → `aeco-axis 0.1.3`. Geometry, drivers and all other bytes are
+identical. The result remains **5,614,609 bytes**, within the 10 MB cap.
+Both previews were freshly rendered; the committed PNGs are retained because
+Embree sampling changes image bytes. [Comparison evidence](docs/public-repin.json)
+records the fresh hashes and exact USD byte comparison.
 
-Nix remains unproven: the single offline flake-check attempt with exact local
-source overrides failed while resolving axis v0.1.2's nested data-centre v0.4.2
-input (HTTP 404). Native regeneration and live round trips were not run.
-The source tessellation, findings and existing example limitations remain unchanged.
+Nix packaging remains unproven: one offline attempt evaluated five Darwin
+derivations, then was stopped after 180 seconds during prerequisite builds.
+Two public tags resolved anonymously; three requested authentication. See the
+[acceptance deviations](docs/acceptance.md#deviations) for the exact limits.
+
+Native regeneration and live round trips remain unproven. The existing
+source tessellation, catalog and multi-leg axis limitations remain unchanged.
 
 ## Licence
 

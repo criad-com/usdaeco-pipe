@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.2.5
+
+- public re-pin: toolchain v0.3.10, core v0.9.5, axis v0.1.5, IFC v0.2.2,
+  datacentre v0.4.8. Record the checked revisions alongside public release tags.
+- Keep the library requirement ranges; require toolchain >=0.3.10,<0.4
+  for the release-tag and package-version checks in S05.
+- Republish the example; geometry and drivers are byte-identical. Only the
+  axis producer stamp changes (0.1.2 to 0.1.3, retained by axis v0.1.5),
+  alongside source-tag and manifest provenance. Retain the committed PNGs
+  after fresh renders, whose sampling changes bytes.
+- Verify 82 checks, 0 failed, 0 not run; all 29 structure rules, eight core
+  validators and 20 pytest tests pass against the exact tagged sources.
+- Record the single offline Nix attempt: five Darwin derivations evaluated,
+  interrupted after 180 seconds during prerequisites; packaging remains unproven.
+  Two public tags resolve anonymously; three lookups request authentication.
+
 ## 0.2.4
 
 - Public names → github.com/criad-com.

@@ -1,65 +1,125 @@
 # Acceptance evidence
 
-Target: usdAecoPipe 0.2.1, core 0.9.1, axis 0.1.1, toolchain 0.3.1,
-data centre 0.4.1, IFC 0.1.0. Python tests run directly from source on USD 26.8.
-The gate retains all 41 original checks. Sdf comparison still covers five APIs,
-18 properties and nine derived flags, including names, types, defaults,
-variability and allowed tokens.
+Target: usdAecoPipe 0.2.5, core 0.9.5, axis 0.1.5, toolchain 0.3.10,
+data centre 0.4.8, IFC 0.2.2. [dependencies.json](../dependencies.json) records
+the five release tags and checked source revisions. All five revisions were
+resolved from the source forge and matched the clean sibling checkouts.
+Library requirement ranges are unchanged. Python tests run directly from source
+on USD 26.8, without setuptools or package installation.
 
 | Acceptance | Measured result |
 |---|---|
-| Full check.py | **81 checks, 0 failed** |
+| Full check.py | **82 checks, 0 failed, 0 not run** |
 | Pytest from source | **20 passed** |
-| Minimal smoke | **21 checks, 0 failed**, all **8 core validators loaded** |
+| Structure from toolchain v0.3.10 | **29/29 PASS**, including S05 tag refs and package versions; no exception applied |
+| Core UsdValidation registry | **8/8 loaded**, with the missing-tolerance regression detected |
 | Minimal pipe/core/built-in validation | **0 errors, 0 warnings** |
-| Core E15 regression | Removing the tee tolerance produces `ExactWithoutTolerance` |
-| S27 standalone result and freshness | **PASS: 14,153 prims, 0 composition errors; regenerated result matches** |
-| S28 independent plugin-free render | **PASS: fresh stock Embree render, non-uniform** |
-| Structure | **28/28 with family licence policy; raw upstream 26/28**, S01/S25 exceptions below |
-| Term sweep | **Clean except required MIT copyright line; serialized crate clean** |
-| Result inventory | **14 files, 5,614,113 bytes** / 10,000,000-byte cap |
-| Flattened crate | **1,784,152 bytes; 14,153 prims** |
+| Schema compatibility | **5 APIs, 18 properties, 9 derived flags**, unchanged from the declared v0.1.2 fixture |
+| S27 standalone result and freshness | **14,153 prims, 0 composition errors**, fresh result matches |
+| S28 independent plugin-free render | **PASS**, fresh stock Embree render, non-uniform |
+| Fresh example runtime | **28.659 seconds** / 180-second budget |
+| Result inventory | **14 files, 5,614,609 bytes** / 10,000,000-byte cap |
+| Flattened crate | **1,784,659 bytes; 14,153 prims** |
 | Own USDA layers | **11 files; largest 847,944 bytes** / 2,000,000-byte cap |
-| Vanilla render | **1280 × 800; 168,527 bytes** / 400,000-byte cap; visually inspected |
+| Vanilla render | **1280 × 800; 168,537 bytes** / 400,000-byte cap |
 | Required DN50 cases | **5/5**, nominal 0.05 m, OD 0.0603 m, two ports and inherited catalogs |
 | Pipe promotion | **482 segments, 238 fittings, 1,650 ports, 17 types, 5 systems** |
-| Axis guides | **1,794**, in four deterministic text batches with composed Sdf fields unchanged |
+| Axis guides | **1,794**, in four deterministic text batches |
+| Source transforms | **12,279 identical** in the plugin-free comparison |
 | Pinned example pipe-validator findings | **0 errors, 0 warnings** |
-| Pinned composed example core validation | **0 errors, 2 source classification warnings** on utility-intake proxies |
-| Nix | **1 attempt**, stopped at public axis v0.1.1 source HTTP 404 |
+| Offline Nix flake check | **1 attempt**, 5 Darwin derivations evaluated; stopped after 180 seconds, exit 1; build unproven |
+| Public tag lookups without credentials | **2/5 resolved**; three authentication errors, detailed below |
+| Publication sweep | **73 files, 0 findings**, including decoded USD crates |
+| Whitespace and old public-org references | **git diff --check PASS; 0 obsolete org refs** |
 
-[Machine-readable checks](acceptance.json) record each final gate result.
+[Machine-readable checks](acceptance.json) record the complete gate.
 The [example manifest](../examples/datacentre/manifest.json) records every result
 file's bytes and hashes, normalized crate hash, source evidence and dependency pins.
-The minimal fixture's four driven guides use axis v0.1.1. Its two-branch tee has
-no axis drivers; the known 0.2 m coordinates round to float32 with error below
-1e-8 m, the declared generation tolerance. The segmented elbow also has no axis
-drivers and retains its stored `arcSegmented` guide.
+[Re-pin comparisons](public-repin.json) record the byte comparisons, render hashes,
+source revisions and anonymous public-tag results.
+
+## Republished result
+
+Run the [README build setup](../README.md#build-and-check), then:
+
+```sh
+env -u PYTHONPATH PYTHONPATH="$AECO_CORE_ROOT:$(pwd)" "$AECO_PYTHON" examples/datacentre/run.py --publish
+env -u PYTHONPATH PYTHONPATH="$AECO_CORE_ROOT:$(pwd)" "$AECO_PYTHON" check.py --report out/public-check.json
+env -u PYTHONPATH "$AECO_PYTHON" -m pytest -q
+```
+
+The gate used the committed `usdAeco/` and `usdAecoAxis/` resource directories
+from the exact tagged sources. Their installed `out/` copies had older metadata;
+no dependency checkout was rebuilt or changed.
+
+The published data-centre source inventory, source manifest hash and expected
+findings hash match v0.2.4 exactly. Six editable layers are byte-identical.
+The other five contain exactly 1,799 replacements of `aeco-axis 0.1.2` with
+`aeco-axis 0.1.3`: 1,794 guide stamps and five layer producer strings. Reversing
+only that string replacement reproduces every previous layer byte and every
+previous flattened-crate byte. No geometry, driver, transform or other field
+changed. The generated schema is also byte-identical; plugin metadata advances
+to 0.2.5.
+
+[Axis CHANGELOG 0.1.3](https://github.com/criad-com/usdaeco-axis/blob/v0.1.5/CHANGELOG.md)
+records the producer-stamp refresh; 0.1.5 explicitly retains that stamp because
+derivation is unchanged. The generated result notice changes only its source
+tag, v0.4.5 to v0.4.8; manifest changes record pins, revisions and updated hashes.
+
+Both preview images were rendered by the publication step. The committed PNGs
+were then restored from v0.2.4 and their original manifest hashes retained, as
+S28 does not compare pixels across renders. Fresh and retained images differ
+by mean absolute RGB channel values of 0.177 and 0.178 on the 0–255 scale.
+Their fresh hashes are recorded in the comparison receipt. The full gate
+subsequently rendered the committed crate independently and passed S27/S28.
+
+## Offline Nix attempt
+
+Exactly one `nix flake check --offline --no-write-lock-file` invocation used ten
+local overrides. It evaluated five Darwin derivations (the default package,
+plugin set, two checks and development shell), inspected both apps, and reported
+`running 867 flake checks`. The attempt was deliberately bounded to 180 seconds
+and interrupted during the `bash53-014` prerequisite build, exiting 1 after
+180.04 seconds. No package or gate build completed; Linux and public resolution
+were not proven. No lockfile was written and no retry ran.
+
+The five direct overrides in the README select the target release checkouts.
+The complete command also supplies nested source inputs. Set
+`AECO_BUILD_TOOLCHAIN_ROOT` to the local aeco-toolchain v0.4.0 checkout and
+`OPENUSD_ROOT` to a local Git clone containing the pinned upstream revision:
+
+```sh
+nix flake check --offline --no-write-lock-file --max-jobs 1 \
+  --option substituters '' --option builders '' \
+  --override-input toolchain "path:$TOOLCHAIN_DIR" \
+  --override-input core "path:$AECO_CORE_ROOT" \
+  --override-input axis "path:$AECO_AXIS_ROOT" \
+  --override-input ifc "path:$AECO_IFC_ROOT" \
+  --override-input datacentre "path:$AECO_DATACENTRE_ROOT" \
+  --override-input core/datacentre "path:$AECO_DATACENTRE_ROOT" \
+  --override-input axis/datacentre "path:$AECO_DATACENTRE_ROOT" \
+  --override-input toolchain/core "git+file://$AECO_CORE_ROOT?ref=refs/tags/v0.9.2" \
+  --override-input toolchain/aeco-toolchain "path:$AECO_BUILD_TOOLCHAIN_ROOT" \
+  --override-input toolchain/aeco-toolchain/openusd "git+file://$OPENUSD_ROOT?rev=47154dc7b5e28df623745495a7a508b69535ba24"
+```
 
 ## Deviations
 
-- The family licence is MIT with the required copyright holder. Toolchain v0.3.1 S01 still
-  rejects it with `Apache-2.0 license text required`. The repo gate replaces only
-  that exact failure with a full MIT-text hash and manifest-licence check;
-  missing root files and every other lint failure remain failures. The raw
-  upstream S01 rejection is retained here as a deviation, not reported as a pass.
-  S25 also rejects the required copyright-holder line. Only `LICENSE:3` is
-  accepted, with the same full-file hash; any additional term match fails.
-- One `nix flake check --no-write-lock-file` attempt failed while resolving the
-  public axis v0.1.1 source (HTTP 404). Nix builds are not proven; no retry ran.
-- The default data-centre checkout has advanced. The existing runner exports the
-  pinned v0.4.1 tag into ignored `out/pins/` without modifying that checkout;
-  source mode remains `pinned`. Explicit source-root overrides stay strict.
-- The 2,293,528-byte full axis derivation exceeds the individual USDA cap.
-  It is archived as four deterministic batches plus a small sublayer wrapper;
-  an Sdf field comparison rejects any change in composed opinions.
-- The pinned composed data-centre stage retains two core `proxyClassified`
-  warnings on utility-intake proxies. Its existing pipe-validator scope remains
-  unchanged and clean. The minimal pipe fixture passes core, pipe and built-in
-  validation with zero warnings; all eight core rules must load in the gate.
-- The kit harness fixes proxy/render purposes. The existing second render call
-  retains the guide view and refreshes its measured manifest; S28 independently
-  renders the crate plugin-free with proxy/render purposes.
-- Source catalog gaps remain: 476 segments lack nominal values and all 17 tables
-  are incomplete. The chilled-water pair retains its first-leg axis limitation.
-  Native body regeneration and exact/mesh clash verdicts are not proven here.
+- The single offline Nix attempt was interrupted at its 180-second execution
+  limit during prerequisite builds. Packaging, Linux and online reproduction
+  remain **not proven**; no second attempt was made.
+
+- Anonymous GitHub lookups resolved toolchain v0.3.10 and core v0.9.5. Axis
+  v0.1.5, IFC v0.2.2 and datacentre v0.4.8 requested authentication. The supplied
+  target tags are retained, but their public availability is **not independently
+  proven** here. Public orphan revisions are recorded separately from checked
+  source revisions; source hashes are never substituted into flake URLs.
+- The committed PNG bytes are retained after fresh rendering to avoid sampling
+  churn. The crate and five axis layers change only the documented producer
+  stamp, so raw byte identity is claimed only after that exact replacement.
+- Historical v0.1.2 schema evidence and the v0.2.3 relocation receipt retain their
+  original pins. They are historical evidence, not flake inputs or current gates.
+- Existing source limitations remain: two core classification warnings on
+  utility-intake proxies, 476 segments without nominal values, 17 incomplete
+  catalogs and first-leg axes on the chilled-water pair. Native body regeneration,
+  live round trips and exact/mesh clash verdicts remain unproven here.

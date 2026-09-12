@@ -2,7 +2,7 @@
 (
     customLayerData = {
         string "aeco:axis:layer" = "derived"
-        string "aeco:axis:producer" = "aeco-axis 0.1.2"
+        string "aeco:axis:producer" = "aeco-axis 0.1.3"
     }
     subLayers = [
         @axis/part-000.usda@,

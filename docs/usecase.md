@@ -97,7 +97,7 @@ not a geometric clash test and does not prove a complete engineering catalog.
 
 Run `examples/datacentre/run.py` as documented in the
 [example contract](../examples/datacentre/README.md). Source mode is `pinned`,
-variant `clash`, release v0.4.5. No generator or converter runs for this example.
+variant `clash`, release v0.4.8. No generator or converter runs for this example.
 The published manifest supplies 2,980 elements, 35 spaces, 2 levels and 6,244 ports;
 the semantic manifest supplies 482 pipe segments and 238 fittings.
 
@@ -152,8 +152,8 @@ an authoritative section source or use the optional IFC profile importer.
 
 ## 9 Status
 
-Version 0.2.2 preserves the five APIs and 18-property contract while publishing
-its standalone result with toolchain v0.3.5. Core v0.9.2 and axis v0.1.2 provide
+Version 0.2.5 preserves the five APIs and 18-property contract while publishing
+its standalone result with toolchain v0.3.10. Core v0.9.5 and axis v0.1.5 provide
 validation and derived guides. The minimal fixture passes with zero errors and
 warnings; the pinned data-centre pipe checks remain clean. See
 [acceptance evidence](acceptance.md) for measured checks, artifact sizes and

@@ -1,7 +1,7 @@
 # usdAecoPipe schema reference
 
-Version **0.2.2**, kind tier, requires `usdAeco >=0.9,<1.0` and
-`usdAecoAxis >=0.1.1,<0.2`; checked against core v0.9.2 and axis v0.1.2.
+Version **0.2.5**, kind tier, requires `usdAeco >=0.9,<1.0` and
+`usdAecoAxis >=0.1.1,<0.2`; checked against core v0.9.5 and axis v0.1.5.
 The authoritative source is [schema.usda](../usdAecoPipe/schema.usda).
 All five schemas are single-apply APIs. The published per-API namespaces are
 preserved, including `aeco:pipeType:` and `aeco:pipeFitting:`.

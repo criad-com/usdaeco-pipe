@@ -1,0 +1,178 @@
+{
+  "axis_provenance": {
+    "after": "aeco-axis 0.1.3",
+    "basis": "usdaeco-axis CHANGELOG 0.1.3; retained by 0.1.5",
+    "before": "aeco-axis 0.1.2"
+  },
+  "baseline": "v0.2.4",
+  "checked_pins": {
+    "axis": {
+      "library": "usdAecoAxis",
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
+    },
+    "core": {
+      "library": "usdAeco",
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
+    },
+    "datacentre": {
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.8",
+      "repo": "usdaeco-datacentre",
+      "revision": "9e22b14c4909e50806805e735f93b1b425ac48cb"
+    },
+    "ifc": {
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
+    },
+    "toolchain": {
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
+    }
+  },
+  "crate": {
+    "byte_identical": false,
+    "bytes": 1784659,
+    "equal_except_axis_provenance": true
+  },
+  "layers": [
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/inputs/axes.usda",
+      "stamp_changes": 0
+    },
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/inputs/cameras.usda",
+      "stamp_changes": 0
+    },
+    {
+      "byte_identical": false,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/axis/part-000.usda",
+      "stamp_changes": 501
+    },
+    {
+      "byte_identical": false,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/axis/part-001.usda",
+      "stamp_changes": 501
+    },
+    {
+      "byte_identical": false,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/axis/part-002.usda",
+      "stamp_changes": 501
+    },
+    {
+      "byte_identical": false,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/axis/part-003.usda",
+      "stamp_changes": 295
+    },
+    {
+      "byte_identical": false,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/axis.derived.usda",
+      "stamp_changes": 1
+    },
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/pipe.derived.usda",
+      "stamp_changes": 0
+    },
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/pipe.usda",
+      "stamp_changes": 0
+    },
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/presentation.usda",
+      "stamp_changes": 0
+    },
+    {
+      "byte_identical": true,
+      "equal_except_axis_provenance": true,
+      "path": "result/layers/out/source.usda",
+      "stamp_changes": 0
+    }
+  ],
+  "nix": {
+    "attempts": 1,
+    "completed": false,
+    "elapsed_seconds": 180.04,
+    "evaluated_darwin_derivations": 5,
+    "exit_code": 1,
+    "interrupted_at_180_seconds": true,
+    "last_build": "bash53-014",
+    "local_overrides": [
+      "toolchain",
+      "core",
+      "axis",
+      "ifc",
+      "datacentre",
+      "core/datacentre",
+      "axis/datacentre",
+      "toolchain/core",
+      "toolchain/aeco-toolchain",
+      "toolchain/aeco-toolchain/openusd"
+    ],
+    "lockfile_written": false,
+    "reported_flake_checks": 867
+  },
+  "public_tag_lookups": {
+    "axis": {
+      "reason": "Anonymous GitHub lookup requested authentication; target supplied as published.",
+      "resolved": false
+    },
+    "core": {
+      "resolved": true,
+      "revision": "784e4a77b9b6e8340cf35f221332bc14dd9e5f20"
+    },
+    "datacentre": {
+      "reason": "Anonymous GitHub lookup requested authentication; target supplied as published.",
+      "resolved": false
+    },
+    "ifc": {
+      "reason": "Anonymous GitHub lookup requested authentication; target supplied as published.",
+      "resolved": false
+    },
+    "toolchain": {
+      "resolved": true,
+      "revision": "6328e1b5e63f89ea87984ad240b5c3ca37974795"
+    }
+  },
+  "release": "v0.2.5",
+  "renders": [
+    {
+      "fresh_bytes": 167968,
+      "fresh_sha256": "8869ce450ac83ba0ce1c03600304920f46938aa494a97212109be3727458a301",
+      "mean_absolute_rgb_difference_255": 0.176697265625,
+      "path": "renders/l01_void.png",
+      "retained_bytes": 168560,
+      "retained_sha256": "bba58cc7cd876fa9f6f12cec24360d5a6f564d901137b6b956dd2823549aae7d"
+    },
+    {
+      "fresh_bytes": 168491,
+      "fresh_sha256": "77aab302d5084dab5a8e5248aa9ca836bc7ff5d5a282dc5fcf7cfef3586a8c07",
+      "mean_absolute_rgb_difference_255": 0.17784147135416664,
+      "path": "result/vanilla.png",
+      "retained_bytes": 168537,
+      "retained_sha256": "fd082d089bf92b1b8b5a6b110d6cf6add08b09bd7cfd462ee0debe3085779e74"
+    }
+  ],
+  "source_and_findings_identical": true
+}

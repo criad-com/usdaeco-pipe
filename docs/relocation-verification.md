@@ -1,5 +1,8 @@
 # Portable example verification
 
+Historical evidence for v0.2.3; current pins and results are in
+[acceptance evidence](acceptance.md).
+
 Version 0.2.3 uses toolchain 0.3.6. Sources and consumer checkouts were placed in
 two different directory layouts; the second started without inputs/source or
 transient out/ files. Each full gate ran the pinned example and created its own
