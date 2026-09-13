@@ -1,6 +1,6 @@
 # usdAecoPipe schema reference
 
-Version **0.2.5**, kind tier, requires `usdAeco >=0.9,<1.0` and
+Version **0.2.6**, kind tier, requires `usdAeco >=0.9,<1.0` and
 `usdAecoAxis >=0.1.1,<0.2`; checked against core v0.9.5 and axis v0.1.5.
 The authoritative source is [schema.usda](../usdAecoPipe/schema.usda).
 All five schemas are single-apply APIs. The published per-API namespaces are
@@ -190,7 +190,9 @@ present in the IFC remain outside this initial importer.
 
 ## Verification and integration boundaries
 
-[`check.py`](../check.py) runs 40 checks (35 original checks plus dependency and hygiene gates). The reference baseline imports as
+[`check.py`](../check.py) runs the schema, importer, example, dependency and
+hygiene gates; [acceptance](acceptance.md) records the current counts.
+The reference baseline imports as
 2 pipes, 2 types, 4 ports, 1 system and 0 fittings: it contains no fitting
 or pipe property set. An augmented temporary baseline adds a real revolved
 fitting and typed property sets to exercise all five APIs and suppression of
@@ -202,7 +204,7 @@ The local example has 0 errors and 0 warnings. Seeded missing axis and a
 plugins preserves all 28 example transforms and reads authored data through
 the fallback types.
 
-The shared toolchain v0.3.5 supplies the codeless builder, validation adapters,
+The shared toolchain v0.3.10 supplies the codeless builder, validation adapters,
 structure lint, example harness and CPU renderer. Source generation writes beside
 schema.usda; installation writes below out/plugins. The five plugin rules use
 keyword `UsdAecoPipeValidators` and names `usdAecoPipeValidators:Pipe…Checker`.
@@ -218,6 +220,12 @@ units to SI; pressure and temperature are already Pa and K. No body is inferred.
 Unknown nominal values are blocked, and incomplete bore data never becomes an
 invented catalog row. A catalog class may describe an imported known section
 without asserting a complete manufacturing table.
+
+Generated section classes live in `/<defaultPrim>/_TypeCatalog` when that
+catalog exists or the default prim has `AecoProjectAPI`. Existing inherited
+types are reused. Only stages without either use `class "_TypeCatalog"` at
+the stage root. Queries and validators follow the actual inherits, including
+after the project is referenced at another path.
 
 Both import paths split schema-marked derived properties into a sibling
 `pipe.derived.usda`. The root layers only imported drivers over readback and the

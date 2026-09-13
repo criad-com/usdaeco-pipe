@@ -7,7 +7,7 @@ import sys
 
 from pxr import Plug, Usd
 
-__version__ = "0.2.5"
+__version__ = "0.2.6"
 ROOT = Path(__file__).resolve().parents[2]
 APIS = ("AecoPipeAPI", "AecoPipeTypeAPI", "AecoPipeFittingAPI",
         "AecoPipePortAPI", "AecoPipeSystemAPI")

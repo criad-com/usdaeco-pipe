@@ -152,7 +152,9 @@ an authoritative section source or use the optional IFC profile importer.
 
 ## 9 Status
 
-Version 0.2.5 preserves the five APIs and 18-property contract while publishing
+Version 0.2.6 keeps promoted pipe classes with the project's catalog, preserving
+inheritance when the project is referenced. It preserves the five APIs and
+18-property contract while publishing
 its standalone result with toolchain v0.3.10. Core v0.9.5 and axis v0.1.5 provide
 validation and derived guides. The minimal fixture passes with zero errors and
 warnings; the pinned data-centre pipe checks remain clean. See

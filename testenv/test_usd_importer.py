@@ -59,6 +59,144 @@ def test_unknown_values_stay_unknown(tmp_path):
     assert stats['unknownNominal']==1 and stats['AecoPipeTypeAPI']==0
 
 
+@pytest.mark.parametrize('project_root', ['/Campus', '/RenamedProject'])
+@pytest.mark.parametrize('existing_catalog', [True, False])
+def test_project_catalog_survives_reference(tmp_path, monkeypatch, project_root, existing_catalog):
+    monkeypatch.setenv('AECO_STUDY_ROOT', '/Studies/pipe')
+    source = tmp_path / 'source.usda'
+    fixture(source)
+    stage = Usd.Stage.CreateNew(str(tmp_path / 'project.usda'))
+    UsdGeom.SetStageMetersPerUnit(stage, 1)
+    project = stage.DefinePrim(project_root, 'Xform')
+    project.ApplyAPI('AecoProjectAPI')
+    stage.SetDefaultPrim(project)
+    pipe = stage.DefinePrim(project_root + '/Pipe')
+    pipe.GetReferences().AddReference(str(source))
+    catalog_root = project_root + '/_TypeCatalog'
+    if existing_catalog:
+        stage.CreateClassPrim(catalog_root)
+        existing = stage.CreateClassPrim(catalog_root + '/Existing')
+        existing.ApplyAPI('AecoTypeAPI')
+    stage.GetRootLayer().Save()
+    before = {p: p.read_bytes() for p in [source, tmp_path / 'project.usda']}
+    output = tmp_path / 'pipe.usda'
+    import_stage(tmp_path / 'project.usda', output)
+    composed = Usd.Stage.Open(str(output))
+    catalog = pipe_type_of(composed.GetPrimAtPath(project_root + '/Pipe'))
+    assert catalog.GetPath().GetParentPath() == Sdf.Path(catalog_root)
+    assert composed.GetRootLayer().GetPrimAtPath(catalog.GetPath()).specifier == Sdf.SpecifierClass
+    assert not composed.GetPrimAtPath('/_TypeCatalog')
+    assert not composed.GetPrimAtPath('/Studies')
+    assert [p.GetPath() for p in composed.GetPseudoRoot().GetAllChildren()] == [Sdf.Path(project_root)]
+    if existing_catalog:
+        assert composed.GetPrimAtPath(catalog_root + '/Existing').HasAPI('AecoTypeAPI')
+    # Referencing only the default project must carry both the inherit and table.
+    referenced = Usd.Stage.CreateInMemory()
+    referenced.DefinePrim('/Delivered').GetReferences().AddReference(str(output))
+    delivered_pipe = referenced.GetPrimAtPath('/Delivered/Pipe')
+    assert pipe_type_of(delivered_pipe).GetPath().GetParentPath() == Sdf.Path('/Delivered/_TypeCatalog')
+    assert size_table(pipe_type_of(delivered_pipe)) == [(0.05, 0.0603, 0.0543)]
+    assert not referenced.GetCompositionErrors()
+    assert all(p.read_bytes() == data for p, data in before.items())
+
+
+@pytest.mark.parametrize('has_default_prim', [True, False])
+def test_standalone_catalog_parent_is_class(tmp_path, monkeypatch, has_default_prim):
+    monkeypatch.setenv('AECO_STUDY_ROOT', '/Studies/pipe')
+    source = tmp_path / 'source.usda'
+    stage = fixture(source)
+    if not has_default_prim:
+        stage.ClearDefaultPrim()
+        stage.GetRootLayer().Save()
+    before = source.read_bytes()
+    output = tmp_path / 'pipe.usda'
+    import_stage(source, output)
+    composed = Usd.Stage.Open(str(output))
+    catalog = pipe_type_of(composed.GetPrimAtPath('/Pipe'))
+    assert catalog.GetPath().GetParentPath() == Sdf.Path('/_TypeCatalog')
+    for path in [Sdf.Path('/_TypeCatalog'), catalog.GetPath()]:
+        assert composed.GetRootLayer().GetPrimAtPath(path).specifier == Sdf.SpecifierClass
+    assert not composed.GetPrimAtPath('/Studies')
+    assert size_table(catalog) == [(0.05, 0.0603, 0.0543)]
+    assert source.read_bytes() == before
+
+
+def test_reuses_inherited_project_type(tmp_path):
+    source = tmp_path / 'source.usda'
+    stage = fixture(source)
+    project = stage.DefinePrim('/Project', 'Xform')
+    stage.SetDefaultPrim(project)
+    Sdf.CopySpec(stage.GetRootLayer(), '/Pipe', stage.GetRootLayer(), '/Project/Pipe')
+    stage.RemovePrim('/Pipe')
+    stage.CreateClassPrim('/Project/_TypeCatalog')
+    catalog = stage.CreateClassPrim('/Project/_TypeCatalog/Existing')
+    catalog.ApplyAPI('AecoTypeAPI')
+    stage.GetPrimAtPath('/Project/Pipe').GetInherits().AddInherit(catalog.GetPath())
+    stage.GetRootLayer().Save()
+    output = tmp_path / 'pipe.usda'
+    stats = import_stage(source, output)
+    composed = Usd.Stage.Open(str(output))
+    assert stats['AecoPipeTypeAPI'] == 1
+    assert pipe_type_of(composed.GetPrimAtPath('/Project/Pipe')).GetPath() == catalog.GetPath()
+    assert not any(p.GetName().startswith('PipeSection_') for p in composed.TraverseAll())
+    assert not composed.GetPrimAtPath('/_TypeCatalog')
+
+
+@pytest.mark.parametrize('has_project', [True, False])
+def test_hook_study_setting_keeps_guides_under_elements(tmp_path, monkeypatch, has_project):
+    from usdaeco_pipe.example import CASE_IDS, library_hook
+
+    source = tmp_path / 'element.usda'
+    fixture(source)
+    base = Usd.Stage.CreateNew(str(tmp_path / 'base.usda'))
+    UsdGeom.SetStageMetersPerUnit(base, 1)
+    UsdGeom.SetStageUpAxis(base, 'Z')
+    base.SetMetadata('fallbackPrimTypes', {'AecoPort': Vt.TokenArray(['Xform'])})
+    project = base.DefinePrim('/Building', 'Xform')
+    base.SetDefaultPrim(project)
+    if has_project:
+        project.ApplyAPI('AecoProjectAPI')
+        base.CreateClassPrim('/Building/_TypeCatalog')
+    for i, identity in enumerate((*CASE_IDS, 'pipe.other')):
+        pipe = base.DefinePrim('/Building/Pipe_%d' % i)
+        pipe.GetReferences().AddReference(str(source))
+        pipe.GetAttribute('aeco:id').Set('8a837b65-0221-4340-bcc5-bd8d11a0ee1%d' % i)
+        pipe.CreateAttribute('aeco:props:DC_Identity:Id', Sdf.ValueTypeNames.String).Set(identity)
+    base.GetRootLayer().Save()
+    source_bytes = {p: p.read_bytes() for p in [source, tmp_path / 'base.usda']}
+    expected = None
+    for i, study_root in enumerate([None, '/Studies/pipe', '/Studies/RenamedPipe']):
+        if study_root is None:
+            monkeypatch.delenv('AECO_STUDY_ROOT', raising=False)
+        else:
+            monkeypatch.setenv('AECO_STUDY_ROOT', study_root)
+        out = tmp_path / str(i)
+        out.mkdir()
+        stage = Usd.Stage.CreateNew(str(out / 'example.usda'))
+        stage.GetRootLayer().subLayerPaths = [str(tmp_path / 'base.usda')]
+        for key in ['defaultPrim', 'metersPerUnit', 'upAxis', 'fallbackPrimTypes']:
+            stage.SetMetadata(key, base.GetMetadata(key))
+        rows = library_hook(stage, out)
+        assert sum(r['name'] == 'DN50Promotion' and r['catalog'] and r['axis'] for r in rows) == 5
+        catalog_root = Sdf.Path('/Building/_TypeCatalog' if has_project else '/_TypeCatalog')
+        assert all(pipe_type_of(p).GetPath().GetParentPath() == catalog_root
+                   for p in stage.Traverse() if p.HasAPI('AecoPipeAPI'))
+        assert set(p.GetPath() for p in stage.GetPseudoRoot().GetAllChildren()) == (
+            {Sdf.Path('/Building')} if has_project else {Sdf.Path('/Building'), catalog_root})
+        guides = [p for p in stage.Traverse() if p.GetAttribute('aeco:derived:role').Get() == 'axis']
+        assert len(guides) == 6
+        assert all(p.GetParent().HasAPI('AecoElementAPI') for p in guides)
+        assert not stage.GetCompositionErrors()
+        # There is no standalone study content: a setting must neither create
+        # empty scopes nor change catalog, guide, relationship or metadata paths.
+        authored = {str(p.relative_to(out)): p.read_bytes() for p in out.rglob('*.usda')}
+        if expected is None:
+            expected = authored
+        else:
+            assert authored == expected
+    assert all(p.read_bytes() == data for p, data in source_bytes.items())
+
+
 def test_standard_property_wins_over_demo_fallback(tmp_path):
     source=tmp_path/'source.usda';s=fixture(source)
     p=s.GetPrimAtPath('/Pipe')

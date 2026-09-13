@@ -55,6 +55,12 @@ def split_axis_layer(path):
 
 
 def library_hook(stage, out_dir):
+    """Promote in place, retaining guides beneath their source elements.
+
+    AECO_STUDY_ROOT passes through to subprocesses. This hook adds no shared
+    looks or other standalone study prims, so it needs no study scope of its
+    own. Catalogs belong to the project regardless of that setting.
+    """
     root=stage.GetRootLayer()
     root.Save()
     # The CLI gets a snapshot of the input stack, never its future composed root.

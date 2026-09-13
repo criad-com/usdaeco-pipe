@@ -130,25 +130,22 @@ regressions and the released schema snapshot. `docs/usecase.md` describes Route 
 
 ## Status
 
-Version **0.2.5** pins public release tags for every family input and records
-all five checked revisions in [dependencies.json](dependencies.json). The source
-gate passes **82 checks, 0 failed, 0 not run**, including **29/29 structure
-rules** and all **eight core validators**. All **20 pytest tests pass**.
-[Acceptance evidence](docs/acceptance.md) records the measurements and Nix outcome.
+Version **0.2.6** puts generated pipe section classes under the default
+project's `_TypeCatalog`, with the six promoted section inherits following them.
+Referencing the project now carries all its pipe catalogs. A standalone stage
+without a project retains a root-level class catalog. The committed minimal
+example and generated schema are byte-identical to v0.2.5.
 
-The example was republished with toolchain **v0.3.10**. Its source bytes and
-findings are unchanged. Six of 11 editable layers are byte-identical; the other
-five and the flattened crate differ only in the upstream axis producer string,
-`aeco-axis 0.1.2` → `aeco-axis 0.1.3`. Geometry, drivers and all other bytes are
-identical. The result remains **5,614,609 bytes**, within the 10 MB cap.
-Both previews were freshly rendered; the committed PNGs are retained because
-Embree sampling changes image bytes. [Comparison evidence](docs/public-repin.json)
-records the fresh hashes and exact USD byte comparison.
+`AECO_STUDY_ROOT=/Studies/pipe` is compatible with the hook. It adds no
+standalone study objects: all guides stay under their elements and presentation
+edits remain on existing geometry, so no study scope is needed. Tests cover
+unset and renamed study roots without changing authored layer bytes.
 
-Nix packaging remains unproven: one offline attempt evaluated five Darwin
-derivations, then was stopped after 180 seconds during prerequisite builds.
-Two public tags resolved anonymously; three requested authentication. See the
-[acceptance deviations](docs/acceptance.md#deviations) for the exact limits.
+The data-centre example is republished with unchanged dependency pins and
+findings. The v0.5.2 full delivery is tested separately using
+`check.py --project-stage path/to/dist/full/dc.usda`; this does not repin the
+committed example. [Acceptance evidence](docs/acceptance.md) records the gate,
+29 pytest tests, source preservation, reference composition and packaging limits.
 
 Native regeneration and live round trips remain unproven. The existing
 source tessellation, catalog and multi-leg axis limitations remain unchanged.

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.6
+
+- Put imported pipe section classes in the default project's `_TypeCatalog`
+  and retarget their inherits, so referencing the project carries its catalog.
+  Reuse existing types; create the catalog under `AecoProjectAPI` when needed.
+  Stages without a project catalog or project API retain a root-level class
+  catalog, with an explicit `class` parent instead of an implicit `def`.
+- Verify the hook with `AECO_STUDY_ROOT` unset, `/Studies/pipe` and a renamed
+  study root. All its guides remain under elements and presentation edits stay
+  on existing geometry; there are no standalone study prims to relocate.
+- Republish the pinned data-centre result: two section classes move and six
+  inherits are retargeted. Preserve the minimal example and generated schema
+  byte-for-byte; dependency pins and schema contracts are unchanged.
+- Add project/reference, standalone and full-hook regressions (29 pytest tests),
+  plus `check.py --project-stage` for an explicit delivery compatibility probe.
+  Record v0.5.2 full-stage and packaging evidence in `docs/acceptance.md`.
+
 ## 0.2.5
 
 - public re-pin: toolchain v0.3.10, core v0.9.5, axis v0.1.5, IFC v0.2.2,

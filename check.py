@@ -324,6 +324,18 @@ def migration_checks():
         return [stage.GetPropertyAtPath(path) for path in paths]
     drivers = Sdf.Layer.FindOrOpen(str(out / "pipe.usda"))
     derived = Sdf.Layer.FindOrOpen(str(out / "pipe.derived.usda"))
+    catalog_path = stage.GetDefaultPrim().GetPath().AppendChild('_TypeCatalog')
+    sections = [p for p in stage.TraverseAll() if p.GetName().startswith('PipeSection_')]
+    section_paths = {p.GetPath() for p in sections}
+    check("generated pipe classes and six inherits use the project catalog", bool(sections)
+          and not stage.GetPrimAtPath('/_TypeCatalog')
+          and all(p.GetPath().GetParentPath() == catalog_path
+                  and drivers.GetPrimAtPath(p.GetPath()).specifier == Sdf.SpecifierClass for p in sections)
+          and sum(bool(section_paths.intersection(p.GetInherits().GetAllDirectInherits()))
+                  for p in stage.Traverse()) == 6)
+    check("pipe hook adds no standalone study roots", all(
+        p.GetPath() in (stage.GetDefaultPrim().GetPath(), Sdf.Path('/Renders'))
+        for p in stage.GetPseudoRoot().GetAllChildren()))
     check("imported drivers and schema-marked readback occupy separate layers", all(
         a.GetMetadata("aecoDerived") is not True for a in attributes(drivers))
         and all(a.GetMetadata("aecoDerived") is True for a in attributes(derived)) and bool(attributes(derived)))
@@ -360,10 +372,55 @@ print(count)
     check("plugin-free data-centre composition preserves every source transform", int(output.stdout) > 9000, output.stdout.strip() + " transforms")
 
 
+def project_catalog_checks(source):
+    """Exercise the complete hook on an explicitly selected project delivery."""
+    from usdaeco_pipe.example import library_hook
+    base = Usd.Stage.Open(str(source.resolve()))
+    before = {Path(layer.realPath): digest(layer.realPath)
+              for layer in base.GetUsedLayers() if layer.realPath}
+    with tempfile.TemporaryDirectory(prefix='aeco-pipe-project-') as directory:
+        out = Path(directory)
+        stage = Usd.Stage.CreateNew(str(out / 'example.usda'))
+        stage.GetRootLayer().subLayerPaths = [str(source.resolve())]
+        for key in ('defaultPrim', 'upAxis', 'metersPerUnit', 'fallbackPrimTypes'):
+            if base.HasAuthoredMetadata(key):
+                stage.SetMetadata(key, base.GetMetadata(key))
+        library_hook(stage, out)
+        project = stage.GetDefaultPrim().GetPath()
+        catalog = project.AppendChild('_TypeCatalog')
+        sections = [p for p in stage.TraverseAll() if p.GetName().startswith('PipeSection_')]
+        section_paths = {p.GetPath() for p in sections}
+        inherits = sum(bool(section_paths.intersection(p.GetInherits().GetAllDirectInherits()))
+                       for p in stage.Traverse())
+        check('project delivery: generated classes and inherits stay in its catalog', bool(sections)
+              and all(p.GetPath().GetParentPath() == catalog and p.GetSpecifier() == Sdf.SpecifierClass
+                      for p in sections) and inherits > 0 and not stage.GetPrimAtPath('/_TypeCatalog'),
+              '%d classes, %d occurrences, %s' % (len(sections), inherits, catalog))
+        guides = [p for p in stage.Traverse() if p.GetAttribute('aeco:derived:role').Get() == 'axis']
+        check('project delivery: no new roots; guides remain under elements', bool(guides)
+              and {p.GetPath() for p in stage.GetPseudoRoot().GetAllChildren()}
+              == {p.GetPath() for p in base.GetPseudoRoot().GetAllChildren()}
+              and all(p.GetParent().HasAPI('AecoElementAPI') for p in guides),
+              '%d guides; study setting %s' % (len(guides), os.environ.get('AECO_STUDY_ROOT', '(unset)')))
+        referenced = Usd.Stage.CreateInMemory()
+        referenced.DefinePrim('/ReferencedProject').GetReferences().AddReference(str(out / 'example.usda'))
+        pipes = [p for p in iter_pipes(referenced) if pipe_type_of(p)]
+        check('project delivery: reference carries inherited pipe catalogs', bool(pipes)
+              and len(pipes) == sum(bool(pipe_type_of(p)) for p in iter_pipes(stage))
+              and all(pipe_type_of(p).GetPath().HasPrefix('/ReferencedProject/_TypeCatalog') for p in pipes)
+              and not referenced.GetCompositionErrors(), '%d pipes with catalogs' % len(pipes))
+        check('project delivery: composition and pipe validation clean', not stage.GetCompositionErrors()
+              and not findings(stage))
+        check('project delivery: source layers unchanged', all(digest(path) == sha for path, sha in before.items()),
+              '%d layers' % len(before))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--baseline", help="external reference IFC, otherwise use the synthetic fixture")
     parser.add_argument("--report", type=Path, help="optional JSON acceptance report")
+    parser.add_argument("--project-stage", type=Path,
+                        help="also test the complete hook on a project delivery (without repinning the example)")
     parser.add_argument("--core-plugin", default=os.environ.get(
         "CORE_PLUGIN_DIR", str(core_root() / "out/plugins/usdAeco/resources")))
     parser.add_argument("--plugin", default=os.environ.get(
@@ -395,6 +452,8 @@ def main():
             with tempfile.TemporaryDirectory(prefix="aeco-pipe-check-") as directory:
                 importer_checks(Path(directory), args.baseline)
         migration_checks()
+        if args.project_stage:
+            project_catalog_checks(args.project_stage)
         print("== stage: structure", flush=True)
         from usdaeco_check.structure import check_structure
         for result in check_structure(ROOT, deps=dependency_plugins()):

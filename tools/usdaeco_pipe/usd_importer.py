@@ -15,6 +15,18 @@ from . import APIS, register_plugins
 PIPE_PSET = "Pset_PipeSegmentTypeCommon"
 
 
+def _section_catalog(stage):
+    """Keep generated types with the project so references carry their catalog."""
+    project = stage.GetDefaultPrim()
+    catalog = project.GetChild('_TypeCatalog') if project else None
+    if catalog:
+        return catalog.GetPath()
+    if project and project.HasAPI('AecoProjectAPI'):
+        return stage.CreateClassPrim(project.GetPath().AppendChild('_TypeCatalog')).GetPath()
+    # CreateClassPrim on a child alone would define its missing parent as a def.
+    return stage.CreateClassPrim('/_TypeCatalog').GetPath()
+
+
 def write_layers(stage, layer, output, sources):
     """Separate all schema-marked readback properties from imported drivers."""
     output = Path(output).resolve()
@@ -131,7 +143,7 @@ def import_stage(source, output):
         if catalog is None and dims['nominalDiameter'] is not None:
             # A shared section catalog is a class, never a new referent or identity.
             key=hashlib.sha256(repr(tuple(dims.values())).encode()).hexdigest()[:12]
-            catalog=stage.CreateClassPrim('/_TypeCatalog/PipeSection_'+key)
+            catalog=stage.CreateClassPrim(_section_catalog(stage).AppendChild('PipeSection_'+key))
             catalog.ApplyAPI('AecoTypeAPI')
             catalog.GetAttribute('aeco:type:model').Set('Imported pipe section')
             prim.GetInherits().AddInherit(catalog.GetPath())

@@ -1,0 +1,39 @@
+{
+  "baseline": "v0.2.5",
+  "minimal_sha256": "1e76058b9d63ad5e6b62a3e83d2ddc54f8d32af0df060f688a8a6b804143c537",
+  "minimal_byte_identical": true,
+  "generated_schema_byte_identical": true,
+  "crate_matches_after_catalog_moves_and_root_removal": true,
+  "unchanged_own_layers": [
+    "result/layers/inputs/axes.usda",
+    "result/layers/inputs/cameras.usda",
+    "result/layers/out/axis/part-000.usda",
+    "result/layers/out/axis/part-001.usda",
+    "result/layers/out/axis/part-002.usda",
+    "result/layers/out/axis/part-003.usda",
+    "result/layers/out/axis.derived.usda",
+    "result/layers/out/pipe.derived.usda",
+    "result/layers/out/presentation.usda",
+    "result/layers/out/source.usda"
+  ],
+  "changed_own_layers": [
+    "result/layers/out/pipe.usda"
+  ],
+  "dependency_pins_unchanged": true,
+  "pytest_passed": 29,
+  "content_scan": {
+    "text_and_decoded_files": 71,
+    "decoded_crates": 1,
+    "findings": 0
+  },
+  "nix": {
+    "attempts": 1,
+    "exit_code": null,
+    "timed_out": true,
+    "elapsed_seconds": 180.062,
+    "darwin_derivations_evaluated": 5,
+    "packaging_proven": false,
+    "linux_proven": false,
+    "lockfile_written": false
+  }
+}

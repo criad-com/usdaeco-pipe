@@ -12,6 +12,19 @@ env -u PYTHONPATH "$AECO_PYTHON" examples/datacentre/run.py
 
 The shared `run_example` harness composes `inputs/*.usda`. The library hook runs
 `aeco-pipe import`, then `aeco-axis derive`, then the registered pipe validators.
+Generated pipe section classes join `/<defaultPrim>/_TypeCatalog`; the six
+section inherits point into that project catalog. A reference to the project
+carries both its original and promoted pipe types.
+
+The suite can pass `AECO_STUDY_ROOT=/Studies/pipe`. This hook creates no
+standalone study objects: axis guides stay beneath their elements, and its
+presentation layer edits visibility and color on existing geometry. Setting a
+study root therefore adds no empty scope and leaves those paths unchanged.
+There are no shared looks, relationship targets or metadata paths to relocate.
+The pinned renderer requires the example's existing `/Renders/l01_void` camera;
+the hook itself adds no cameras. See the recorded
+[deviation](../../docs/acceptance.md#deviations).
+
 The ordinary run writes only `out/`; `--publish` updates the flattened
 `result/example.usdc`, own layers under `result/layers/`, `result/README.md`,
 `result/vanilla.png`, committed renders and `manifest.json`. Open the crate with

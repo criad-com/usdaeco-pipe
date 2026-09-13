@@ -50,15 +50,15 @@
   },
   "renders": [
     {
-      "bytes": 168560,
+      "bytes": 168351,
       "height": 800,
       "path": "renders/l01_void.png",
-      "sha256": "bba58cc7cd876fa9f6f12cec24360d5a6f564d901137b6b956dd2823549aae7d",
+      "sha256": "f5d77d23b016fa36ff47bfc7b66f0255ae2abe1c0b29fc7a27529399e045a99c",
       "width": 1280
     }
   ],
   "result": {
-    "bytes": 5614609,
+    "bytes": 5614756,
     "files": [
       {
         "bytes": 865,
@@ -66,10 +66,10 @@
         "sha256": "26e4e0e52e86ad416021a5a6314137e1f761845768d0a0d6733dad6d76851511"
       },
       {
-        "bytes": 1784659,
-        "normalized_sha256": "a26f0edffe2d8539937241cae828b9cf7e40e568f10fdd4b1c3c517174cd1687",
+        "bytes": 1784228,
+        "normalized_sha256": "422cc1b5a83d0d8b843c29af6f90ea62398acf6358310d53732e51e093532bc0",
         "path": "result/example.usdc",
-        "sha256": "dd3a1060007ed2bfe290371edcaaff7b26faefd032bc4596f65e57b048247c72"
+        "sha256": "d3b692647337a188811088f1fdb6b54fbeeff9e9f96a23896a5006f0631cc2c8"
       },
       {
         "bytes": 1241,
@@ -112,9 +112,9 @@
         "sha256": "9594c8c7f8c67514157008af861f510ff2f4f194844f99514af2d087bea67f4e"
       },
       {
-        "bytes": 450574,
+        "bytes": 450713,
         "path": "result/layers/out/pipe.usda",
-        "sha256": "26c5d8446fb8397c1fec4b815d0a54c700f7f8f94e14b59f200a67ef87ec7101"
+        "sha256": "b8975500b1dd349b33b3b52f2b5353bada80ebce6cdededa0134da5e4b37b4d8"
       },
       {
         "bytes": 847944,
@@ -127,18 +127,18 @@
         "sha256": "e022c04934b32b81ecc3e04ed076d3e6b824ef4955e3d790c9f245e0a91d23e4"
       },
       {
-        "bytes": 168537,
+        "bytes": 168976,
         "path": "result/vanilla.png",
-        "sha256": "fd082d089bf92b1b8b5a6b110d6cf6add08b09bd7cfd462ee0debe3085779e74"
+        "sha256": "70454f953de47f0428119eba691fbd6a7147d6425212494c210d4eb0110fdc75"
       }
     ],
     "normalization": "sdf-usda-v1",
-    "prim_count": 14153,
+    "prim_count": 14152,
     "vanilla": {
-      "bytes": 168537,
+      "bytes": 168976,
       "height": 800,
       "path": "result/vanilla.png",
-      "sha256": "fd082d089bf92b1b8b5a6b110d6cf6add08b09bd7cfd462ee0debe3085779e74",
+      "sha256": "70454f953de47f0428119eba691fbd6a7147d6425212494c210d4eb0110fdc75",
       "width": 1280
     }
   },
